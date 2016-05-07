@@ -35,6 +35,7 @@
 /* Begin PBXFileReference section */
 		D2F18FD81CDE96130053BC66 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		D2F18FDB1CDE96220053BC66 /* CommonCryptoSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCryptoSwift.swift; sourceTree = "<group>"; };
+		D2F18FDF1CDE97220053BC66 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* CommonCryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2F18FDE1CDE97100053BC66 /* CCommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				D2F18FDF1CDE97220053BC66 /* module.modulemap */,
+			);
+			path = CCommonCrypto;
+			sourceTree = "<group>";
+		};
 		D5B2E8951C3A780C00C0327D = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +125,7 @@
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D2F18FDE1CDE97100053BC66 /* CCommonCrypto */,
 				D2F18FDB1CDE96220053BC66 /* CommonCryptoSwift.swift */,
 			);
 			path = Sources;
@@ -451,6 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.CommonCryptoSwift.CommonCryptoSwift-iOS";
 				PRODUCT_NAME = CommonCryptoSwift;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CCommonCrypto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -470,6 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.CommonCryptoSwift.CommonCryptoSwift-iOS";
 				PRODUCT_NAME = CommonCryptoSwift;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CCommonCrypto";
 			};
 			name = Release;
 		};

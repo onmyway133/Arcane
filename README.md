@@ -1,14 +1,11 @@
 # CommonCryptoSwift
+CommonCrypto in Swift
 
 [![CI Status](http://img.shields.io/travis/onmyway133/CommonCryptoSwift.svg?style=flat)](https://travis-ci.org/onmyway133/CommonCryptoSwift)
 [![Version](https://img.shields.io/cocoapods/v/CommonCryptoSwift.svg?style=flat)](http://cocoadocs.org/docsets/CommonCryptoSwift)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/CommonCryptoSwift.svg?style=flat)](http://cocoadocs.org/docsets/CommonCryptoSwift)
 [![Platform](https://img.shields.io/cocoapods/p/CommonCryptoSwift.svg?style=flat)](http://cocoadocs.org/docsets/CommonCryptoSwift)
-
-## Description
-
-**CommonCryptoSwift** description.
 
 ## Usage
 

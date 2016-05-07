@@ -1,0 +1,4 @@
+module CCommonCrypto {
+  header "/usr/include/CommonCrypto/CommonCrypto.h"
+  export *
+}
