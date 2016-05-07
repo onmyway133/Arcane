@@ -3,7 +3,7 @@
 //  CommonCryptoSwift
 //
 //  Created by Khoa Pham on 08/05/16.
-//  Copyright © 2016 Khoa Pham. All rights reserved.
+//  Copyright © 2016 Fantageek. All rights reserved.
 //
 
 import Foundation
@@ -33,11 +33,4 @@ struct Crypto {
                              HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA384))
   static let SHA512 = Crypto(length: CC_SHA512_DIGEST_LENGTH, method: CC_SHA512,
                              HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA512))
-
-  func hash(data: NSData) -> [UInt8] {
-    var buffer = Array<UInt8>(count: Int(length), repeatedValue: 0)
-    method(data: data.bytes, len: UInt32(length), md: &buffer)
-
-    return buffer
-  }
 }

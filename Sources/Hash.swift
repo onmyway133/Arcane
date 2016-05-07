@@ -3,7 +3,7 @@
 //  CommonCryptoSwift
 //
 //  Created by Khoa Pham on 07/05/16.
-//  Copyright © 2016 Khoa Pham. All rights reserved.
+//  Copyright © 2016 Fantageek. All rights reserved.
 //
 
 import Foundation
@@ -46,7 +46,8 @@ public struct Hash {
   }
 
   static func hash(data: NSData, crypto: Crypto) -> NSData {
-    let buffer = crypto.hash(data)
+    var buffer = Array<UInt8>(count: Int(crypto.length), repeatedValue: 0)
+    crypto.method(data: data.bytes, len: UInt32(data.length), md: &buffer)
 
     return NSData(bytes: buffer, length: buffer.count)
   }
@@ -81,13 +82,13 @@ public struct Hash {
     return Hash.hash(string, crypto: .SHA384)
   }
 
+  public static func SHA512(string: String) -> String? {
+    return Hash.hash(string, crypto: .SHA512)
+  }
+
   static func hash(string: String, crypto: Crypto) -> String? {
     guard let data = string.dataUsingEncoding(NSUTF8StringEncoding) else { return nil }
 
-    let buffer = crypto.hash(data)
-
-    return Array(0..<crypto.length).reduce("") {
-      $0 ?? "" + String(format: "%02x", buffer[Int($1)])
-    }
+    return Hash.hash(data, crypto: crypto).hexString
   }
 }

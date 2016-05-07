@@ -15,6 +15,8 @@
 		D2F18FF01CDEA2E70053BC66 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */; };
 		D2F18FF21CDEA8400053BC66 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF11CDEA8400053BC66 /* HMAC.swift */; };
 		D2F18FF31CDEA8400053BC66 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF11CDEA8400053BC66 /* HMAC.swift */; };
+		D2F18FF81CDF22570053BC66 /* NSData+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF71CDF22570053BC66 /* NSData+Extensions.swift */; };
+		D2F18FF91CDF22570053BC66 /* NSData+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF71CDF22570053BC66 /* NSData+Extensions.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* CommonCryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* CommonCryptoSwift.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* CommonCryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* CommonCryptoSwift.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,7 @@
 		D2F18FE81CDE99250053BC66 /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
 		D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		D2F18FF11CDEA8400053BC66 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		D2F18FF71CDF22570053BC66 /* NSData+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Extensions.swift"; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* CommonCryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +138,7 @@
 				D2F18FE81CDE99250053BC66 /* Hash.swift */,
 				D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */,
 				D2F18FF11CDEA8400053BC66 /* HMAC.swift */,
+				D2F18FF71CDF22570053BC66 /* NSData+Extensions.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -249,7 +253,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Khoa Pham";
+				ORGANIZATIONNAME = Fantageek;
 				TargetAttributes = {
 					D5B2E89E1C3A780C00C0327D = {
 						CreatedOnToolsVersion = 7.2;
@@ -321,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F18FF81CDF22570053BC66 /* NSData+Extensions.swift in Sources */,
 				D2F18FE91CDE99250053BC66 /* Hash.swift in Sources */,
 				D2F18FF21CDEA8400053BC66 /* HMAC.swift in Sources */,
 				D2F18FEF1CDEA2E70053BC66 /* Crypto.swift in Sources */,
@@ -339,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F18FF91CDF22570053BC66 /* NSData+Extensions.swift in Sources */,
 				D2F18FEA1CDE99250053BC66 /* Hash.swift in Sources */,
 				D2F18FF31CDEA8400053BC66 /* HMAC.swift in Sources */,
 				D2F18FF01CDEA2E70053BC66 /* Crypto.swift in Sources */,
