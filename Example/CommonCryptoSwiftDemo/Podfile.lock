@@ -1,0 +1,14 @@
+PODS:
+  - CommonCryptoSwift (0.1.0)
+
+DEPENDENCIES:
+  - CommonCryptoSwift (from `../../`)
+
+EXTERNAL SOURCES:
+  CommonCryptoSwift:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  CommonCryptoSwift: 257983f3dcda3dc467654069eaa8829edb488a55
+
+COCOAPODS: 0.39.0
