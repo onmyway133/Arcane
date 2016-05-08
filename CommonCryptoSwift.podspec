@@ -17,4 +17,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.source_files = 'Sources/**/*'
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'SWIFT_INCLUDE_PATHS' => '${PODS_ROOT}/Sources/CCommonCrypto' }
+  s.module_map = 'Sources/CCommonCrypto/module.modulemap'
+
 end

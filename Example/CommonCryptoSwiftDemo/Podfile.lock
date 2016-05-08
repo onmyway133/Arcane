@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  CommonCryptoSwift: 257983f3dcda3dc467654069eaa8829edb488a55
+  CommonCryptoSwift: 85f2d73e1a19336c164bf1df0ca1bf0ec2c3904b
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: d67a38a1aae7e7e7e07ca35f2e9c57dd61e7d2e0
+
+COCOAPODS: 1.0.0.beta.8
