@@ -34,7 +34,7 @@ pod 'CommonCryptoSwift'
 To install just write into your Cartfile:
 
 ```ruby
-github "onmyway133/CommonCryptoSwift"
+github "onmyway133/CommonCrypto.swift"
 ```
 
 ## Author
