@@ -2,15 +2,20 @@ PODS:
   - CommonCryptoSwift (0.1.0)
 
 DEPENDENCIES:
-  - CommonCryptoSwift (from `../../`)
+  - CommonCryptoSwift (from `https://github.com/onmyway133/CommonCrypto.swift`)
 
 EXTERNAL SOURCES:
   CommonCryptoSwift:
-    :path: "../../"
+    :git: https://github.com/onmyway133/CommonCrypto.swift
+
+CHECKOUT OPTIONS:
+  CommonCryptoSwift:
+    :commit: c4d758ec195bb38284cb2149dc6dee21ad5dd1e6
+    :git: https://github.com/onmyway133/CommonCrypto.swift
 
 SPEC CHECKSUMS:
   CommonCryptoSwift: 3248a2412fac3fced7ed51c62b3a9d1932e21823
 
-PODFILE CHECKSUM: d67a38a1aae7e7e7e07ca35f2e9c57dd61e7d2e0
+PODFILE CHECKSUM: a2e5ffbdf0fc0edb82758b54102d3f6af53280f9
 
 COCOAPODS: 1.0.0.beta.8
