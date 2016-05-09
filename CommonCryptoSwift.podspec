@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.2'
 
   s.requires_arc = true
-  s.source_files = 'Sources/**/*'
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'SWIFT_INCLUDE_PATHS' => '${PODS_ROOT}/Sources/CCommonCrypto' }
-  s.module_map = 'Sources/CCommonCrypto/module.modulemap'
+  s.source_files = 'Sources/**/*.swift'
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/CommonCryptoSwift/Sources/CCommonCrypto' }
+  s.preserve_paths = 'Sources/CCommonCrypto/module.modulemap'
 
 end
