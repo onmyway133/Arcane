@@ -27,7 +27,7 @@ HMAC.SHA1("https://www.google.com/logos/doodles/2016/parents-day-in-korea-575770
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'CommonCryptoSwift'
+pod 'CommonCryptoSwift', git: 'https://github.com/onmyway133/CommonCrypto.swift'
 ```
 
 **CommonCryptoSwift** is also available through [Carthage](https://github.com/Carthage/Carthage).
