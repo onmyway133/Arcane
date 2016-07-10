@@ -9,6 +9,10 @@ CommonCrypto in Swift
 
 ![](Screenshots/Banner.png)
 
+## Description
+
+Read my answer here [Importing CommonCrypto in a Swift framework](http://stackoverflow.com/a/37125785/1418457)
+
 ## Features
 
 - Work on NSData, String
