@@ -11,7 +11,7 @@ import CommonCryptoSwift
 
 class Tests: XCTestCase {
 
-  func testHash() {
+  func testHashWithString() {
     let string = "https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg"
 
     XCTAssertEqual(Hash.MD2(string), "e4a410bf8a43197e67a01d717bbf3557")
@@ -23,6 +23,12 @@ class Tests: XCTestCase {
     XCTAssertEqual(Hash.SHA256(string), "cb051d58a60b9581ff4c7ba63da07f9170f61bfbebab4a39898432ec970c3754")
     XCTAssertEqual(Hash.SHA384(string), "ee999f4e722bdab4534a4c3b9d33a13e37ab4bf227348d7218ef32f7483ee09f05f5f15e69e09d7d53dec46d4df16275")
     XCTAssertEqual(Hash.SHA512(string), "13416866022ace1b3392c0d7a7fb1e311612d3e30e9bafa9045ed9cdcd14ea4c31fb3b18d716c44ccecf8c18be5c063a0883bbc60f964ce002890fb628cf35c7")
+  }
+
+  func testHashWithData() {
+    let string = "https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg"
+
+     XCTAssertEqual(Hash.SHA384(string.dataUsingEncoding(NSUTF8StringEncoding)!).length, 48)
   }
 
   func testHMAC() {
