@@ -1,4 +1,4 @@
-# Arcane.swift
+# Arcane
 CommonCrypto in Swift
 
 [![CI Status](http://img.shields.io/travis/onmyway133/Arcane.svg?style=flat)](https://travis-ci.org/onmyway133/Arcane)
