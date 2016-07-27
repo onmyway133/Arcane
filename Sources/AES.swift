@@ -14,11 +14,11 @@ public struct AES {
   // MARK: - Data
 
   public static func encrypt(data: NSData, key: NSData) -> NSData? {
-    return perform(data, key: key, encrypted: true)
+    return perform(data, key: key, encrypting: true)
   }
 
   public static func decrypt(data: NSData, key: NSData) -> NSData? {
-    return perform(data, key: key, encrypted: false)
+    return perform(data, key: key, encrypting: false)
   }
 
   // MARK: - String
@@ -27,7 +27,7 @@ public struct AES {
     guard let data = string.dataUsingEncoding(NSUTF8StringEncoding),
       keyData = key.dataUsingEncoding(NSUTF8StringEncoding) else { return nil }
 
-    let encrypted = perform(data, key: keyData, encrypted: true)
+    let encrypted = perform(data, key: keyData, encrypting: true)
     return encrypted?.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
   }
 
@@ -35,16 +35,16 @@ public struct AES {
     guard let data = NSData(base64EncodedString: string, options: .IgnoreUnknownCharacters),
       keyData = key.dataUsingEncoding(NSUTF8StringEncoding) else { return nil }
 
-    guard let decrypted = perform(data, key: keyData, encrypted: false) else { return nil }
+    guard let decrypted = perform(data, key: keyData, encrypting: false) else { return nil }
     return String(data: decrypted, encoding: NSUTF8StringEncoding)
   }
 
   // MARK: - Private
 
-  private static func perform(data: NSData, key: NSData, encrypted: Bool) -> NSData? {
+  private static func perform(data: NSData, key: NSData, encrypting: Bool) -> NSData? {
     guard let out = NSMutableData(length: data.length + kCCBlockSizeAES128) else { return nil }
 
-    let operation = encrypted ? kCCEncrypt : kCCDecrypt
+    let operation = encrypting ? kCCEncrypt : kCCDecrypt
     var dataOutMovedLength: Int = 0
 
     let status = CCCrypt(
