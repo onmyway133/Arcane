@@ -44,6 +44,10 @@ public struct AES {
   private static func perform(data: NSData, key: NSData, encrypting: Bool) -> NSData? {
     guard let out = NSMutableData(length: data.length + kCCBlockSizeAES128) else { return nil }
 
+    let hashData = Hash.SHA384(key)
+    let hashKeyData = hashData.subdataWithRange(NSMakeRange(0, 32))
+    let ivData = hashData.subdataWithRange(NSMakeRange(32, 16))
+
     let operation = encrypting ? kCCEncrypt : kCCDecrypt
     var dataOutMovedLength: size_t = 0
 
@@ -51,9 +55,9 @@ public struct AES {
       CCOperation(operation),
       CCAlgorithm(kCCAlgorithmAES128),
       CCOptions(kCCOptionPKCS7Padding),
-      key.bytes,
+      hashKeyData.bytes,
       kCCKeySizeAES128,
-      nil,
+      ivData.bytes,
       data.bytes,
       size_t(data.length),
       out.mutableBytes,
