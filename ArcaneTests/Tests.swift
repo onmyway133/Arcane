@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import CommonCryptoSwift
+import Arcane
 
 class Tests: XCTestCase {
 
