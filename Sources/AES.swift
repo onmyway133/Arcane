@@ -45,22 +45,22 @@ public struct AES {
     guard let out = NSMutableData(length: data.length + kCCBlockSizeAES128) else { return nil }
 
     let operation = encrypting ? kCCEncrypt : kCCDecrypt
-    var dataOutMovedLength: Int = 0
+    var dataOutMovedLength: size_t = 0
 
     let status = CCCrypt(
-      UInt32(operation),
-      UInt32(kCCAlgorithmAES128),
-      UInt32(kCCOptionPKCS7Padding),
+      CCOperation(operation),
+      CCAlgorithm(kCCAlgorithmAES128),
+      CCOptions(kCCOptionPKCS7Padding),
       key.bytes,
       kCCKeySizeAES128,
       nil,
       data.bytes,
-      data.length,
+      size_t(data.length),
       out.mutableBytes,
-      out.length,
+      size_t(out.length),
       &dataOutMovedLength)
 
-    guard UInt32(status) == UInt32(kCCSuccess) else { return nil }
+    guard Int(status) == Int(kCCSuccess) else { return nil }
 
     out.length = dataOutMovedLength
     return out
