@@ -19,10 +19,23 @@ Read my answer here [Importing CommonCrypto in a Swift framework](http://stackov
 - Message Digest, SHA, HMAC
 - Hash Algorithm: MD2, MD4, MD5, SHA1, SHA256, SHA224, SHA384, SHA512
 
+### Hash
+
 ```swift
 Hash.MD5("https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg") // 0dfb10e8d2ae771b3b3ed4544139644e
 Hash.SHA246("https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg") // cb051d58a60b9581ff4c7ba63da07f9170f61bfbebab4a39898432ec970c3754
+```
+
+### HMAC
+
+```swift
 HMAC.SHA1("https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg", key: "google") // 5f4474c8872d73c1490241ab015f6c672c6dcdc8
+```
+
+### Obfuscator
+
+```swift
+let obfuscator = Obfuscator(value: "").a.b.c.d.e.n1.n2.X.Y.Z // "abcde12XYZ"
 ```
 
 ## Installation
