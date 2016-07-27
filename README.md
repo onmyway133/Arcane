@@ -7,7 +7,7 @@ CommonCrypto in Swift
 [![License](https://img.shields.io/cocoapods/l/Arcane.svg?style=flat)](http://cocoadocs.org/docsets/Arcane)
 [![Platform](https://img.shields.io/cocoapods/p/Arcane.svg?style=flat)](http://cocoadocs.org/docsets/Arcane)
 
-![](Screenshots/Banner.png)
+![](Screenshots/Arcane.png)
 
 ## Description
 
