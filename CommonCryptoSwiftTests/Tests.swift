@@ -36,4 +36,9 @@ class Tests: XCTestCase {
     XCTAssertEqual(HMAC.SHA384(string, key: key), "afa2026322d2843e564a9d88e2a03a5a4f75581386217052d952bdda7a7af6a48ba4e0b927229cdec46cdf7e5ffa9ee3")
     XCTAssertEqual(HMAC.SHA512(string, key: key), "d75af2a8f76dd22b3e7a52f84593e3c9d56065a675f5e96ecf3e1354d6dba05f357418fbfbd3af0491e69f548bb4200600d139d601741c6c9eb37952e2e38d7a")
   }
+
+  func testObfuscator() {
+    let obfuscator = Obfuscator(value: "").a.b.c.d.e.n1.n2.X.Y.Z
+    XCTAssertEqual(obfuscator.value, "abcde12XYZ")
+  }
 }

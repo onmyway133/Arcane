@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Obfuscator {
-  let value: String
+  public let value: String
 
   public init(value: String) {
     self.value = value
