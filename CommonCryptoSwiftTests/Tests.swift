@@ -56,10 +56,6 @@ class Tests: XCTestCase {
     let data = AES.encrypt(string.dataUsingEncoding(NSUTF8StringEncoding)!, key: key.dataUsingEncoding(NSUTF8StringEncoding)!)
     let decrypted = AES.decrypt(data!, key: key.dataUsingEncoding(NSUTF8StringEncoding)!)!
 
-    if let decryptedString = String(data: decrypted, encoding: NSUTF8StringEncoding) {
-      XCTAssertEqual(decryptedString, string)
-    } else {
-      XCTFail()
-    }
+    XCTAssertEqual(String(data: decrypted, encoding: NSUTF8StringEncoding), string)
   }
 }

@@ -36,6 +36,7 @@ HMAC.SHA1("https://www.google.com/logos/doodles/2016/parents-day-in-korea-575770
 
 ```swift
 let _ = AES.encrypt("string", key: "secret")
+let _ = AES.decrypt(data, key: keyData)
 ```
 
 ### Obfuscator
