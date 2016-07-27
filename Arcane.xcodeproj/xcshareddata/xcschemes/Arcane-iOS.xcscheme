@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5C6293F1C3A7FAA007F7B7C"
+               BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
                BuildableName = "Arcane.framework"
-               BlueprintName = "Arcane-Mac"
+               BlueprintName = "Arcane-iOS"
                ReferencedContainer = "container:Arcane.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5C629481C3A7FAA007F7B7C"
+               BlueprintIdentifier = "D5B2E8A81C3A780C00C0327D"
                BuildableName = "Arcane.xctest"
-               BlueprintName = "Arcane-Mac-Tests"
+               BlueprintName = "Arcane-iOS-Tests"
                ReferencedContainer = "container:Arcane.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5C6293F1C3A7FAA007F7B7C"
+            BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
             BuildableName = "Arcane.framework"
-            BlueprintName = "Arcane-Mac"
+            BlueprintName = "Arcane-iOS"
             ReferencedContainer = "container:Arcane.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5C6293F1C3A7FAA007F7B7C"
+            BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
             BuildableName = "Arcane.framework"
-            BlueprintName = "Arcane-Mac"
+            BlueprintName = "Arcane-iOS"
             ReferencedContainer = "container:Arcane.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5C6293F1C3A7FAA007F7B7C"
+            BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
             BuildableName = "Arcane.framework"
-            BlueprintName = "Arcane-Mac"
+            BlueprintName = "Arcane-iOS"
             ReferencedContainer = "container:Arcane.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
