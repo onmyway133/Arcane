@@ -11,9 +11,10 @@ import CommonCryptoSwift
 
 class Tests: XCTestCase {
 
-  func testHashWithString() {
-    let string = "https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg"
+  let string = "https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg"
+  let key = "google"
 
+  func testHashWithString() {
     XCTAssertEqual(Hash.MD2(string), "e4a410bf8a43197e67a01d717bbf3557")
     XCTAssertEqual(Hash.MD4(string), "b263c99c66fd5703b894c020b224f71e")
     XCTAssertEqual(Hash.MD5(string), "0dfb10e8d2ae771b3b3ed4544139644e")
@@ -26,15 +27,10 @@ class Tests: XCTestCase {
   }
 
   func testHashWithData() {
-    let string = "https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg"
-
      XCTAssertEqual(Hash.SHA384(string.dataUsingEncoding(NSUTF8StringEncoding)!).length, 48)
   }
 
   func testHMAC() {
-    let string = "https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg"
-    let key = "google"
-
     XCTAssertEqual(HMAC.MD5(string, key: key), "419337f8da2e81cdf12dcb9b8e4cd76c")
     XCTAssertEqual(HMAC.SHA1(string, key: key), "5f4474c8872d73c1490241ab015f6c672c6dcdc8")
     XCTAssertEqual(HMAC.SHA224(string, key: key), "82a903faa4f93c528f490c699c9bfef0c0ef8a3498dd677cfab0a71e")
@@ -46,5 +42,24 @@ class Tests: XCTestCase {
   func testObfuscator() {
     let obfuscator = Obfuscator(value: "").a.b.c.d.e.n1.n2.X.Y.Z
     XCTAssertEqual(obfuscator.value, "abcde12XYZ")
+  }
+
+  func testAESWithString() {
+    let encrypted = AES.encrypt(string, key: key)
+    let decrypted = AES.decrypt(encrypted!, key: key)
+
+    XCTAssertEqual(decrypted, string)
+  }
+
+  func testAESWithData() {
+
+    let data = AES.encrypt(string.dataUsingEncoding(NSUTF8StringEncoding)!, key: key.dataUsingEncoding(NSUTF8StringEncoding)!)
+    let decrypted = AES.decrypt(data!, key: key.dataUsingEncoding(NSUTF8StringEncoding)!)!
+
+    if let decryptedString = String(data: decrypted, encoding: NSUTF8StringEncoding) {
+      XCTAssertEqual(decryptedString, string)
+    } else {
+      XCTFail()
+    }
   }
 }

@@ -32,6 +32,12 @@ Hash.SHA246("https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757
 HMAC.SHA1("https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg", key: "google") // 5f4474c8872d73c1490241ab015f6c672c6dcdc8
 ```
 
+### AES
+
+```swift
+let _ = AES.encrypt("string", key: "secret")
+```
+
 ### Obfuscator
 
 ```swift
