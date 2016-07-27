@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D5C629481C3A7FAA007F7B7C"
-               BuildableName = "Arcane.xctest"
+               BuildableName = "Arcane-Mac-Tests.xctest"
                BlueprintName = "Arcane-Mac-Tests"
                ReferencedContainer = "container:Arcane.xcodeproj">
             </BuildableReference>
