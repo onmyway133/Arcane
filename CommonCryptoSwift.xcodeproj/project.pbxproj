@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D2A4E2731D48D7D2002016C5 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */; };
 		D2A4E2741D48D7D6002016C5 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */; };
+		D2A4E2761D48DE35002016C5 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2751D48DE35002016C5 /* AES.swift */; };
+		D2A4E2771D48DE35002016C5 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2751D48DE35002016C5 /* AES.swift */; };
 		D2F18FD91CDE96130053BC66 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FD81CDE96130053BC66 /* Tests.swift */; };
 		D2F18FDA1CDE96130053BC66 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FD81CDE96130053BC66 /* Tests.swift */; };
 		D2F18FE91CDE99250053BC66 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FE81CDE99250053BC66 /* Hash.swift */; };
@@ -42,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
+		D2A4E2751D48DE35002016C5 /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
 		D2F18FD81CDE96130053BC66 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		D2F18FDF1CDE97220053BC66 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D2F18FE81CDE99250053BC66 /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
@@ -143,6 +146,7 @@
 				D2F18FF11CDEA8400053BC66 /* HMAC.swift */,
 				D2F18FF71CDF22570053BC66 /* NSData+Extensions.swift */,
 				D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */,
+				D2A4E2751D48DE35002016C5 /* AES.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -330,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2F18FF81CDF22570053BC66 /* NSData+Extensions.swift in Sources */,
+				D2A4E2761D48DE35002016C5 /* AES.swift in Sources */,
 				D2F18FE91CDE99250053BC66 /* Hash.swift in Sources */,
 				D2F18FF21CDEA8400053BC66 /* HMAC.swift in Sources */,
 				D2F18FEF1CDEA2E70053BC66 /* Crypto.swift in Sources */,
@@ -350,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2F18FF91CDF22570053BC66 /* NSData+Extensions.swift in Sources */,
+				D2A4E2771D48DE35002016C5 /* AES.swift in Sources */,
 				D2F18FEA1CDE99250053BC66 /* Hash.swift in Sources */,
 				D2F18FF31CDEA8400053BC66 /* HMAC.swift in Sources */,
 				D2F18FF01CDEA2E70053BC66 /* Crypto.swift in Sources */,
