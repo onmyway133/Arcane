@@ -3,6 +3,6 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'CommonCryptoSwiftDemo' do
- pod 'CommonCryptoSwift', :git => 'https://github.com/onmyway133/CommonCrypto.swift'
+ pod 'Arcane', :git => 'https://github.com/onmyway133/Arcane'
 end
 

@@ -1,21 +1,21 @@
 PODS:
-  - CommonCryptoSwift (0.1.0)
+  - Arcane (0.2.0)
 
 DEPENDENCIES:
-  - CommonCryptoSwift (from `https://github.com/onmyway133/CommonCrypto.swift`)
+  - Arcane (from `https://github.com/onmyway133/Arcane`)
 
 EXTERNAL SOURCES:
-  CommonCryptoSwift:
-    :git: https://github.com/onmyway133/CommonCrypto.swift
+  Arcane:
+    :git: https://github.com/onmyway133/Arcane
 
 CHECKOUT OPTIONS:
-  CommonCryptoSwift:
-    :commit: c4d758ec195bb38284cb2149dc6dee21ad5dd1e6
-    :git: https://github.com/onmyway133/CommonCrypto.swift
+  Arcane:
+    :commit: d9b95bc5bdb4d0a119da364f5c6e4a483426417b
+    :git: https://github.com/onmyway133/Arcane
 
 SPEC CHECKSUMS:
-  CommonCryptoSwift: 3248a2412fac3fced7ed51c62b3a9d1932e21823
+  Arcane: 9cf005ab1ef56af2b8f1644f7399241753cdac13
 
-PODFILE CHECKSUM: a2e5ffbdf0fc0edb82758b54102d3f6af53280f9
+PODFILE CHECKSUM: b2c60322cef8df307287b014271a51659cfa1796
 
-COCOAPODS: 1.0.0.beta.8
+COCOAPODS: 1.0.1
