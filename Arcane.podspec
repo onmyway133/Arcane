@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Arcane"
   s.summary          = "CommonCrypto in Swift"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.homepage         = "https://github.com/onmyway133/Arcane"
   s.license          = 'MIT'
   s.author           = { "Khoa Pham" => "onmyway133@gmail.com" }
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.source_files = 'Sources/**/*.swift'
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Arcane/Sources/CCommonCrypto' }
+  s.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Arcane/Sources/CCommonCrypto' }
   s.preserve_paths = 'Sources/CCommonCrypto/module.modulemap'
 
 end
