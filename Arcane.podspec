@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   #s.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Arcane/Sources/CCommonCrypto' }
 
   s.preserve_paths = 'CocoaPods/**/*'
-  s.xcconfig = {
+  s.pod_target_xcconfig = {
     'SWIFT_INCLUDE_PATHS[sdk=macosx*]'           => '$(PODS_ROOT)/Arcane/CocoaPods/macosx',
     'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]'         => '$(PODS_ROOT)/Arcane/CocoaPods/iphoneos',
     'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]'  => '$(PODS_ROOT)/Arcane/CocoaPods/iphonesimulator',
