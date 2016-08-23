@@ -1,21 +1,16 @@
 PODS:
-  - Arcane (0.2.0)
+  - Arcane (0.3.0)
 
 DEPENDENCIES:
-  - Arcane (from `https://github.com/onmyway133/Arcane`)
+  - Arcane (from `../..`)
 
 EXTERNAL SOURCES:
   Arcane:
-    :git: https://github.com/onmyway133/Arcane
-
-CHECKOUT OPTIONS:
-  Arcane:
-    :commit: d9b95bc5bdb4d0a119da364f5c6e4a483426417b
-    :git: https://github.com/onmyway133/Arcane
+    :path: "../.."
 
 SPEC CHECKSUMS:
-  Arcane: 9cf005ab1ef56af2b8f1644f7399241753cdac13
+  Arcane: 134ce696e5a7e80302c8c7584171664556ec902a
 
-PODFILE CHECKSUM: b2c60322cef8df307287b014271a51659cfa1796
+PODFILE CHECKSUM: 32a6ce1741f89fe5227ffb97932373c12d5e1ef5
 
 COCOAPODS: 1.0.1

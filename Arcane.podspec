@@ -17,10 +17,12 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.source_files = 'Sources/**/*.swift'
+
+  #s.preserve_paths = 'Sources/CCommonCrypto/module.modulemap'
   #s.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Arcane/Sources/CCommonCrypto' }
 
   s.preserve_paths = 'CocoaPods/**/*'
-  s.pod_target_xcconfig = {
+  s.xcconfig = {
     'SWIFT_INCLUDE_PATHS[sdk=macosx*]'           => '$(PODS_ROOT)/Arcane/CocoaPods/macosx',
     'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]'         => '$(PODS_ROOT)/Arcane/CocoaPods/iphoneos',
     'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]'  => '$(PODS_ROOT)/Arcane/CocoaPods/iphonesimulator',
