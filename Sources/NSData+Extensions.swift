@@ -9,17 +9,28 @@
 import Foundation
 
 public extension NSData {
-  
-  var hexString: String {
-    var result = ""
 
-    var bytes = [UInt8](count: length, repeatedValue: 0)
-    getBytes(&bytes, length: length)
+    // MARK: - Hex String
+    var hexString: String {
+        var result = ""
 
-    for byte in bytes {
-      result += String(format: "%02x", UInt(byte))
+        var bytes = [UInt8](count: length, repeatedValue: 0)
+        getBytes(&bytes, length: length)
+
+        for byte in bytes {
+            result += String(format: "%02x", UInt(byte))
+        }
+
+        return result
     }
 
-    return result
-  }
+
+    // MARK: - Base64
+    var base64: NSData {
+        return base64EncodedDataWithOptions([])
+    }
+
+    var base64String: String {
+        return base64EncodedStringWithOptions([])
+    }
 }
