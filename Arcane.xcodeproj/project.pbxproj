@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3D7961A1D75337300A35114 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
 		D200AB4A1D495DFC004C40FC /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2322A331D4957C300B5E1D1 /* Tests.swift */; };
 		D200AB4B1D495DFD004C40FC /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2322A331D4957C300B5E1D1 /* Tests.swift */; };
 		D2322A341D4957C300B5E1D1 /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2322A2E1D4957C300B5E1D1 /* Info-iOS.plist */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3D796191D75337300A35114 /* Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
 		D2322A2E1D4957C300B5E1D1 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D2322A2F1D4957C300B5E1D1 /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
 		D2322A311D4957C300B5E1D1 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -155,12 +157,13 @@
 			isa = PBXGroup;
 			children = (
 				D2F18FDE1CDE97100053BC66 /* CCommonCrypto */,
-				D2F18FE81CDE99250053BC66 /* Hash.swift */,
+				D2A4E2751D48DE35002016C5 /* AES.swift */,
+				A3D796191D75337300A35114 /* Base64.swift */,
 				D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */,
+				D2F18FE81CDE99250053BC66 /* Hash.swift */,
 				D2F18FF11CDEA8400053BC66 /* HMAC.swift */,
 				D2F18FF71CDF22570053BC66 /* NSData+Extensions.swift */,
 				D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */,
-				D2A4E2751D48DE35002016C5 /* AES.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			files = (
 				D2F18FF81CDF22570053BC66 /* NSData+Extensions.swift in Sources */,
 				D2A4E2761D48DE35002016C5 /* AES.swift in Sources */,
+				A3D7961A1D75337300A35114 /* Base64.swift in Sources */,
 				D2F18FE91CDE99250053BC66 /* Hash.swift in Sources */,
 				D2F18FF21CDEA8400053BC66 /* HMAC.swift in Sources */,
 				D2F18FEF1CDEA2E70053BC66 /* Crypto.swift in Sources */,
