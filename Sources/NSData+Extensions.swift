@@ -22,4 +22,12 @@ public extension NSData {
 
     return result
   }
+
+  var base64: NSData {
+    return base64EncodedDataWithOptions([])
+  }
+
+  var base64String: String {
+    return base64EncodedStringWithOptions([])
+  }
 }
