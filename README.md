@@ -35,7 +35,7 @@ HMAC.SHA1("https://www.google.com/logos/doodles/2016/parents-day-in-korea-575770
 ### Base64
 
 ```swift
-Base64.SHA1("https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg", key: "google") // 5f4474c8872d73c1490241ab015f6c672c6dcdc8
+Base64.SHA1("https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg", key: "google") // X0R0yIctc8FJAkGrAV9sZyxtzcg=
 ```
 
 ### AES
