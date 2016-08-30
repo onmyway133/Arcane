@@ -30,6 +30,22 @@ class Tests: XCTestCase {
      XCTAssertEqual(Hash.SHA384(string.dataUsingEncoding(NSUTF8StringEncoding)!).length, 48)
   }
 
+  func testBase64WithString() {
+    XCTAssertEqual(Base64.MD2(string), "5KQQv4pDGX5noB1xe781Vw==")
+    XCTAssertEqual(Base64.MD4(string), "smPJnGb9VwO4lMAgsiT3Hg==")
+    XCTAssertEqual(Base64.MD5(string), "DfsQ6NKudxs7PtRUQTlkTg==")
+
+    XCTAssertEqual(Base64.SHA1(string), "zZm/ox04u1OFAZa48drKaSIx3vU=")
+    XCTAssertEqual(Base64.SHA224(string), "sMr1RLx1aY4e/k1VrPAU3barO1sU0xLhpf5C0w==")
+    XCTAssertEqual(Base64.SHA256(string), "ywUdWKYLlYH/THumPaB/kXD2G/vrq0o5iYQy7JcMN1Q=")
+    XCTAssertEqual(Base64.SHA384(string), "7pmfTnIr2rRTSkw7nTOhPjerS/InNI1yGO8y90g+4J8F9fFeaeCdfVPexG1N8WJ1")
+    XCTAssertEqual(Base64.SHA512(string), "E0FoZgIqzhszksDXp/seMRYS0+MOm6+pBF7Zzc0U6kwx+zsY1xbETM7PjBi+XAY6CIO7xg+WTOACiQ+2KM81xw==")
+    }
+
+  func testBase64WithData() {
+    XCTAssertEqual(Base64.SHA384(string.dataUsingEncoding(NSUTF8StringEncoding)!).length, 64)
+  }
+
   func testHMAC() {
     XCTAssertEqual(HMAC.MD5(string, key: key), "419337f8da2e81cdf12dcb9b8e4cd76c")
     XCTAssertEqual(HMAC.SHA1(string, key: key), "5f4474c8872d73c1490241ab015f6c672c6dcdc8")
