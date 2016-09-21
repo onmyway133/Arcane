@@ -27,7 +27,7 @@ class Tests: XCTestCase {
   }
 
   func testHashWithData() {
-     XCTAssertEqual(Hash.SHA384(string.dataUsingEncoding(NSUTF8StringEncoding)!).length, 48)
+     XCTAssertEqual(Hash.SHA384(string.data(usingEncoding: NSUTF8StringEncoding)!).length, 48)
   }
 
   func testBase64WithString() {
