@@ -27,7 +27,7 @@ class Tests: XCTestCase {
   }
 
   func testHashWithData() {
-     XCTAssertEqual(Hash.SHA384(string.data(usingEncoding: NSUTF8StringEncoding)!).length, 48)
+     XCTAssertEqual(Hash.SHA384(string.data(using: String.Encoding.utf8)!).count, 48)
   }
 
   func testBase64WithString() {
@@ -43,7 +43,7 @@ class Tests: XCTestCase {
     }
 
   func testBase64WithData() {
-    XCTAssertEqual(Base64.SHA384(string.dataUsingEncoding(NSUTF8StringEncoding)!).length, 64)
+    XCTAssertEqual(Base64.SHA384(string.data(using: String.Encoding.utf8)!).count, 64)
   }
 
   func testHMAC() {
@@ -69,9 +69,9 @@ class Tests: XCTestCase {
 
   func testAESWithData() {
 
-    let data = AES.encrypt(string.dataUsingEncoding(NSUTF8StringEncoding)!, key: key.dataUsingEncoding(NSUTF8StringEncoding)!)
-    let decrypted = AES.decrypt(data!, key: key.dataUsingEncoding(NSUTF8StringEncoding)!)!
+    let data = AES.encrypt(string.data(using: String.Encoding.utf8)!, key: key.data(using: String.Encoding.utf8)!)
+    let decrypted = AES.decrypt(data!, key: key.data(using: String.Encoding.utf8)!)!
 
-    XCTAssertEqual(String(data: decrypted, encoding: NSUTF8StringEncoding), string)
+    XCTAssertEqual(String(data: decrypted, encoding: String.Encoding.utf8), string)
   }
 }
