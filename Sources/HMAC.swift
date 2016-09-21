@@ -13,69 +13,69 @@ public struct HMAC {
 
   // MARK: - NSData
 
-  public static func MD5(data: NSData, key: NSData) -> NSData? {
+  public static func MD5(_ data: Data, key: Data) -> Data? {
     return HMAC.generate(data, key: key, crypto: .MD5)
   }
 
-  public static func SHA1(data: NSData, key: NSData) -> NSData? {
+  public static func SHA1(_ data: Data, key: Data) -> Data? {
     return HMAC.generate(data, key: key, crypto: .SHA1)
   }
 
-  public static func SHA224(data: NSData, key: NSData) -> NSData? {
+  public static func SHA224(_ data: Data, key: Data) -> Data? {
     return HMAC.generate(data, key: key, crypto: .SHA224)
   }
 
-  public static func SHA256(data: NSData, key: NSData) -> NSData? {
+  public static func SHA256(_ data: Data, key: Data) -> Data? {
     return HMAC.generate(data, key: key, crypto: .SHA256)
   }
 
-  public static func SHA384(data: NSData, key: NSData) -> NSData? {
+  public static func SHA384(_ data: Data, key: Data) -> Data? {
     return HMAC.generate(data, key: key, crypto: .SHA384)
   }
 
-  public static func SHA512(data: NSData, key: NSData) -> NSData? {
+  public static func SHA512(_ data: Data, key: Data) -> Data? {
     return HMAC.generate(data, key: key, crypto: .SHA512)
   }
 
-  static func generate(data: NSData, key: NSData, crypto: Crypto) -> NSData? {
+  static func generate(_ data: Data, key: Data, crypto: Crypto) -> Data? {
     guard let HMACAlgorithm = crypto.HMACAlgorithm else { return nil }
 
     // Can also use UnsafeMutablePointer<CUnsignedChar>.alloc(Int(crypto.length))
-    var buffer = Array<UInt8>(count: Int(crypto.length), repeatedValue: 0)
-    CCHmac(HMACAlgorithm, key.bytes, key.length, data.bytes, data.length, &buffer)
+    var buffer = Array<UInt8>(repeating: 0, count: Int(crypto.length))
+    CCHmac(HMACAlgorithm, (key as NSData).bytes, key.count, (data as NSData).bytes, data.count, &buffer)
 
-    return NSData(bytes: buffer, length: Int(crypto.length))
+    return Data(bytes: UnsafePointer<UInt8>(buffer), count: Int(crypto.length))
   }
 
   // MARK: - String
 
-  public static func MD5(string: String, key: String) -> String? {
+  public static func MD5(_ string: String, key: String) -> String? {
     return HMAC.generate(string, key: key, crypto: .MD5)
   }
 
-  public static func SHA1(string: String, key: String) -> String? {
+  public static func SHA1(_ string: String, key: String) -> String? {
     return HMAC.generate(string, key: key, crypto: .SHA1)
   }
 
-  public static func SHA224(string: String, key: String) -> String? {
+  public static func SHA224(_ string: String, key: String) -> String? {
     return HMAC.generate(string, key: key, crypto: .SHA224)
   }
 
-  public static func SHA256(string: String, key: String) -> String? {
+  public static func SHA256(_ string: String, key: String) -> String? {
     return HMAC.generate(string, key: key, crypto: .SHA256)
   }
 
-  public static func SHA384(string: String, key: String) -> String? {
+  public static func SHA384(_ string: String, key: String) -> String? {
     return HMAC.generate(string, key: key, crypto: .SHA384)
   }
 
-  public static func SHA512(string: String, key: String) -> String? {
+  public static func SHA512(_ string: String, key: String) -> String? {
     return HMAC.generate(string, key: key, crypto: .SHA512)
   }
 
-  static func generate(string: String, key: String, crypto: Crypto) -> String? {
-    guard let data = string.dataUsingEncoding(NSUTF8StringEncoding),
-      keyData = key.dataUsingEncoding(NSUTF8StringEncoding)
+  static func generate(_ string: String, key: String, crypto: Crypto) -> String? {
+    guard let data = string.data(using: String.Encoding.utf8),
+      let keyData = key.data(using: String.Encoding.utf8)
       else { return nil }
 
     return HMAC.generate(data, key: keyData, crypto: crypto)?.hexString

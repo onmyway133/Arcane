@@ -9,8 +9,8 @@
 import Foundation
 import CCommonCrypto
 
-typealias DigestMethod = (data: UnsafePointer<Void>,
-  len: CC_LONG, md: UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8>
+typealias DigestMethod = (_ data: UnsafeRawPointer,
+  _ len: CC_LONG, _ md: UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8>
 
 struct Crypto {
   let length: Int32
