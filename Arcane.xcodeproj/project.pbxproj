@@ -442,6 +442,13 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				"SWIFT_INCLUDE_PATHS[sdk=appletvos*]" = "${SRCROOT}/Cocoapods/appletvos";
+				"SWIFT_INCLUDE_PATHS[sdk=appletvsimulator*]" = "${SRCROOT}/Cocoapods/appletvsimulator";
+				"SWIFT_INCLUDE_PATHS[sdk=iphoneos*]" = "${SRCROOT}/Cocoapods/iphoneos";
+				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = "${SRCROOT}/Cocoapods/iphonesimulator";
+				"SWIFT_INCLUDE_PATHS[sdk=macosx*]" = "${SRCROOT}/Cocoapods/macosx";
+				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = "${SRCROOT}/Cocoapods/watchos";
+				"SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]" = "${SRCROOT}/Cocoapods/watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -483,6 +490,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				"SWIFT_INCLUDE_PATHS[sdk=appletvos*]" = "${SRCROOT}/Cocoapods/appletvos";
+				"SWIFT_INCLUDE_PATHS[sdk=appletvsimulator*]" = "${SRCROOT}/Cocoapods/appletvsimulator";
+				"SWIFT_INCLUDE_PATHS[sdk=iphoneos*]" = "${SRCROOT}/Cocoapods/iphoneos";
+				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = "${SRCROOT}/Cocoapods/iphonesimulator";
+				"SWIFT_INCLUDE_PATHS[sdk=macosx*]" = "${SRCROOT}/Cocoapods/macosx";
+				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = "${SRCROOT}/Cocoapods/watchos";
+				"SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]" = "${SRCROOT}/Cocoapods/watchsimulator";
+
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -505,7 +520,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-iOS";
 				PRODUCT_NAME = Arcane;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CCommonCrypto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -526,7 +540,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-iOS";
 				PRODUCT_NAME = Arcane;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CCommonCrypto";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
