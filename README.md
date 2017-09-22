@@ -6,7 +6,7 @@ CommonCrypto in Swift
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Arcane.svg?style=flat)](http://cocoadocs.org/docsets/Arcane)
 [![Platform](https://img.shields.io/cocoapods/p/Arcane.svg?style=flat)](http://cocoadocs.org/docsets/Arcane)
-<img src="https://img.shields.io/badge/%20in-swift%203.0-orange.svg">
+<img src="https://img.shields.io/badge/%20in-swift%204.0-orange.svg">
 
 ![](Screenshots/Arcane.png)
 
