@@ -1,5 +1,5 @@
 PODS:
-  - Arcane (0.5.1)
+  - Arcane (1.0.0)
 
 DEPENDENCIES:
   - Arcane (from `https://github.com/onmyway133/Arcane`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Arcane:
-    :commit: 61d9c4cfc75d53a41b5aabd94bc89f7e10fa2369
+    :commit: 7df20a3c2a0ccc0cc38500e4d6f98a6e031aee66
     :git: https://github.com/onmyway133/Arcane
 
 SPEC CHECKSUMS:
-  Arcane: 32bf58834cf1911d0c6c0b4731c977574849738b
+  Arcane: 09df20fba778d0c432c593f2d91b5e80088cb53f
 
 PODFILE CHECKSUM: 3a889e99af4fc781a5f9eeee4ca81a92efb65d82
 
