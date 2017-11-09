@@ -59,7 +59,7 @@ let obfuscator = Obfuscator(value: "").a.b.c.d.e.n1.n2.X.Y.Z // "abcde12XYZ"
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Arcane', git: 'https://github.com/onmyway133/Arcane'
+pod 'Arcane'
 ```
 
 **Arcane** is also available through [Carthage](https://github.com/Carthage/Carthage).
