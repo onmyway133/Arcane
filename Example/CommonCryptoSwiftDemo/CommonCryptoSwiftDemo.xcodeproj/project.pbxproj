@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43DD5CAFBBB67475CBACA589 /* Pods_CommonCryptoSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190D785532941B3A106A93F6 /* Pods_CommonCryptoSwiftDemo.framework */; };
+		ABFDEBD60611FD3A997D1F8E /* Pods_CommonCryptoSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D461E6C77B471EBF8D14FD9 /* Pods_CommonCryptoSwiftDemo.framework */; };
 		D5C7F74E1C3BC9CE008CDDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F74C1C3BC9CE008CDDBA /* LaunchScreen.storyboard */; };
 		D5C7F75B1C3BCA1E008CDDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */; };
 		D5C7F75C1C3BCA1E008CDDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */; };
@@ -15,15 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		190D785532941B3A106A93F6 /* Pods_CommonCryptoSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonCryptoSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6704D07463B1B9C4E7AB935B /* Pods-CommonCryptoSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonCryptoSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonCryptoSwiftDemo/Pods-CommonCryptoSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0D461E6C77B471EBF8D14FD9 /* Pods_CommonCryptoSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonCryptoSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB2B4A3335FB5661F9A0D73 /* Pods-CommonCryptoSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonCryptoSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonCryptoSwiftDemo/Pods-CommonCryptoSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D5C7F7401C3BC9CE008CDDBA /* CommonCryptoSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonCryptoSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C7F74D1C3BC9CE008CDDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C7F74F1C3BC9CE008CDDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5C7F75A1C3BCA1E008CDDBA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E9E609E7224CF3305875D374 /* Pods-CommonCryptoSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonCryptoSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonCryptoSwiftDemo/Pods-CommonCryptoSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EC0AE62B592FAF42E23B3148 /* Pods-CommonCryptoSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonCryptoSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonCryptoSwiftDemo/Pods-CommonCryptoSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,28 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43DD5CAFBBB67475CBACA589 /* Pods_CommonCryptoSwiftDemo.framework in Frameworks */,
+				ABFDEBD60611FD3A997D1F8E /* Pods_CommonCryptoSwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5C610008177E18EF1C32403A /* Frameworks */ = {
+		6A86500FCE8659A799585B17 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				190D785532941B3A106A93F6 /* Pods_CommonCryptoSwiftDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AE75E6438B9DAF0FDB3D26CE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E9E609E7224CF3305875D374 /* Pods-CommonCryptoSwiftDemo.debug.xcconfig */,
-				6704D07463B1B9C4E7AB935B /* Pods-CommonCryptoSwiftDemo.release.xcconfig */,
+				EC0AE62B592FAF42E23B3148 /* Pods-CommonCryptoSwiftDemo.debug.xcconfig */,
+				1FB2B4A3335FB5661F9A0D73 /* Pods-CommonCryptoSwiftDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		794D75ED87AF8E93B61DF92B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D461E6C77B471EBF8D14FD9 /* Pods_CommonCryptoSwiftDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D5C7F7371C3BC9CE008CDDBA = {
@@ -60,8 +60,8 @@
 			children = (
 				D5C7F7421C3BC9CE008CDDBA /* CommonCryptoSwiftDemo */,
 				D5C7F7411C3BC9CE008CDDBA /* Products */,
-				AE75E6438B9DAF0FDB3D26CE /* Pods */,
-				5C610008177E18EF1C32403A /* Frameworks */,
+				6A86500FCE8659A799585B17 /* Pods */,
+				794D75ED87AF8E93B61DF92B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,12 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5C7F7521C3BC9CE008CDDBA /* Build configuration list for PBXNativeTarget "CommonCryptoSwiftDemo" */;
 			buildPhases = (
-				C7D3FFB9DCD3A4C6AA2DA385 /* [CP] Check Pods Manifest.lock */,
+				13118993444AE05B81BA81BA /* [CP] Check Pods Manifest.lock */,
 				D5C7F73C1C3BC9CE008CDDBA /* Sources */,
 				D5C7F73D1C3BC9CE008CDDBA /* Frameworks */,
 				D5C7F73E1C3BC9CE008CDDBA /* Resources */,
-				68E6206C43FDCED318C2C79A /* [CP] Embed Pods Frameworks */,
-				2B4CDA8F16A1BF04F2805683 /* [CP] Copy Pods Resources */,
+				72C41EF3BE42A129915953C0 /* [CP] Embed Pods Frameworks */,
+				82800318183A892E7FE9FDE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,22 +179,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B4CDA8F16A1BF04F2805683 /* [CP] Copy Pods Resources */ = {
+		13118993444AE05B81BA81BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonCryptoSwiftDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommonCryptoSwiftDemo/Pods-CommonCryptoSwiftDemo-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		68E6206C43FDCED318C2C79A /* [CP] Embed Pods Frameworks */ = {
+		72C41EF3BE42A129915953C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,22 +215,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommonCryptoSwiftDemo/Pods-CommonCryptoSwiftDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C7D3FFB9DCD3A4C6AA2DA385 /* [CP] Check Pods Manifest.lock */ = {
+		82800318183A892E7FE9FDE0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CommonCryptoSwiftDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommonCryptoSwiftDemo/Pods-CommonCryptoSwiftDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -358,7 +358,7 @@
 		};
 		D5C7F7531C3BC9CE008CDDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9E609E7224CF3305875D374 /* Pods-CommonCryptoSwiftDemo.debug.xcconfig */;
+			baseConfigurationReference = EC0AE62B592FAF42E23B3148 /* Pods-CommonCryptoSwiftDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CommonCryptoSwiftDemo/Info.plist;
@@ -370,7 +370,7 @@
 		};
 		D5C7F7541C3BC9CE008CDDBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6704D07463B1B9C4E7AB935B /* Pods-CommonCryptoSwiftDemo.release.xcconfig */;
+			baseConfigurationReference = 1FB2B4A3335FB5661F9A0D73 /* Pods-CommonCryptoSwiftDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CommonCryptoSwiftDemo/Info.plist;
