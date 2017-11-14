@@ -14,8 +14,6 @@
 		D2322A361D4957C300B5E1D1 /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2322A311D4957C300B5E1D1 /* Info-iOS.plist */; };
 		D2322A371D4957C300B5E1D1 /* Info-Mac.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2322A321D4957C300B5E1D1 /* Info-Mac.plist */; };
 		D25460351F75557000F4C4B3 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
-		D29B65801FBAEEC400BBFBDE /* Arcane_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D29B657E1FBAEEC400BBFBDE /* Arcane_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D29B658D1FBAEED000BBFBDE /* Arcane_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D29B658B1FBAEED000BBFBDE /* Arcane_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D29B65911FBAEF0F00BBFBDE /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2751D48DE35002016C5 /* AES.swift */; };
 		D29B65921FBAEF0F00BBFBDE /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
 		D29B65931FBAEF0F00BBFBDE /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */; };
@@ -70,12 +68,10 @@
 		D2322A311D4957C300B5E1D1 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D2322A321D4957C300B5E1D1 /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
 		D2322A331D4957C300B5E1D1 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		D29B657C1FBAEEC400BBFBDE /* Arcane_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arcane_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D29B657E1FBAEEC400BBFBDE /* Arcane_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arcane_tvOS.h; sourceTree = "<group>"; };
-		D29B657F1FBAEEC400BBFBDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D29B65891FBAEED000BBFBDE /* Arcane_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arcane_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D29B658B1FBAEED000BBFBDE /* Arcane_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arcane_watchOS.h; sourceTree = "<group>"; };
-		D29B658C1FBAEED000BBFBDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D29B657C1FBAEEC400BBFBDE /* Arcane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arcane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29B657F1FBAEEC400BBFBDE /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		D29B65891FBAEED000BBFBDE /* Arcane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arcane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29B658C1FBAEED000BBFBDE /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
 		D2A4E2751D48DE35002016C5 /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
 		D2F18FDF1CDE97220053BC66 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
@@ -144,6 +140,8 @@
 			children = (
 				D2322A2E1D4957C300B5E1D1 /* Info-iOS.plist */,
 				D2322A2F1D4957C300B5E1D1 /* Info-Mac.plist */,
+				D29B657F1FBAEEC400BBFBDE /* Info-tvOS.plist */,
+				D29B658C1FBAEED000BBFBDE /* Info-watchOS.plist */,
 			);
 			path = Arcane;
 			sourceTree = "<group>";
@@ -156,24 +154,6 @@
 				D2322A331D4957C300B5E1D1 /* Tests.swift */,
 			);
 			path = ArcaneTests;
-			sourceTree = "<group>";
-		};
-		D29B657D1FBAEEC400BBFBDE /* Arcane-tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				D29B657E1FBAEEC400BBFBDE /* Arcane_tvOS.h */,
-				D29B657F1FBAEEC400BBFBDE /* Info.plist */,
-			);
-			path = "Arcane-tvOS";
-			sourceTree = "<group>";
-		};
-		D29B658A1FBAEED000BBFBDE /* Arcane-watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				D29B658B1FBAEED000BBFBDE /* Arcane_watchOS.h */,
-				D29B658C1FBAEED000BBFBDE /* Info.plist */,
-			);
-			path = "Arcane-watchOS";
 			sourceTree = "<group>";
 		};
 		D2F18FDE1CDE97100053BC66 /* CCommonCrypto */ = {
@@ -192,8 +172,6 @@
 				D500FD111C3AABED00782D78 /* Playground-iOS.playground */,
 				D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */,
 				D5C629691C3A809D007F7B7C /* Sources */,
-				D29B657D1FBAEEC400BBFBDE /* Arcane-tvOS */,
-				D29B658A1FBAEED000BBFBDE /* Arcane-watchOS */,
 				D5B2E8A01C3A780C00C0327D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -205,8 +183,8 @@
 				D5B2E8A91C3A780C00C0327D /* Arcane-iOS-Tests.xctest */,
 				D5C629401C3A7FAA007F7B7C /* Arcane.framework */,
 				D5C629491C3A7FAA007F7B7C /* Arcane-Mac-Tests.xctest */,
-				D29B657C1FBAEEC400BBFBDE /* Arcane_tvOS.framework */,
-				D29B65891FBAEED000BBFBDE /* Arcane_watchOS.framework */,
+				D29B657C1FBAEEC400BBFBDE /* Arcane.framework */,
+				D29B65891FBAEED000BBFBDE /* Arcane.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,7 +211,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D29B65801FBAEEC400BBFBDE /* Arcane_tvOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +218,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D29B658D1FBAEED000BBFBDE /* Arcane_watchOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +253,7 @@
 			);
 			name = "Arcane-tvOS";
 			productName = "Arcane-tvOS";
-			productReference = D29B657C1FBAEEC400BBFBDE /* Arcane_tvOS.framework */;
+			productReference = D29B657C1FBAEEC400BBFBDE /* Arcane.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D29B65881FBAEED000BBFBDE /* Arcane-watchOS */ = {
@@ -295,7 +271,7 @@
 			);
 			name = "Arcane-watchOS";
 			productName = "Arcane-watchOS";
-			productReference = D29B65891FBAEED000BBFBDE /* Arcane_watchOS.framework */;
+			productReference = D29B65891FBAEED000BBFBDE /* Arcane.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D5B2E89E1C3A780C00C0327D /* Arcane-iOS */ = {
@@ -418,10 +394,10 @@
 			targets = (
 				D5B2E89E1C3A780C00C0327D /* Arcane-iOS */,
 				D5C6293F1C3A7FAA007F7B7C /* Arcane-macOS */,
-				D5B2E8A81C3A780C00C0327D /* Arcane-iOS-Tests */,
-				D5C629481C3A7FAA007F7B7C /* Arcane-macOS-Tests */,
 				D29B657B1FBAEEC400BBFBDE /* Arcane-tvOS */,
 				D29B65881FBAEED000BBFBDE /* Arcane-watchOS */,
+				D5B2E8A81C3A780C00C0327D /* Arcane-iOS-Tests */,
+				D5C629481C3A7FAA007F7B7C /* Arcane-macOS-Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -578,11 +554,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "Arcane-tvOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Arcane/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Arcane;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -607,11 +583,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "Arcane-tvOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Arcane/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Arcane;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -635,11 +611,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "Arcane-watchOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Arcane/Info-watchOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Arcane;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -664,11 +640,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "Arcane-watchOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Arcane/Info-watchOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Arcane;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -850,7 +826,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.CommonCryptoSwiftTests;
 				PRODUCT_NAME = "Arcane-iOS-Tests";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -864,7 +839,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.CommonCryptoSwiftTests;
 				PRODUCT_NAME = "Arcane-iOS-Tests";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
