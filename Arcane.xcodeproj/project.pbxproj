@@ -14,6 +14,22 @@
 		D2322A361D4957C300B5E1D1 /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2322A311D4957C300B5E1D1 /* Info-iOS.plist */; };
 		D2322A371D4957C300B5E1D1 /* Info-Mac.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2322A321D4957C300B5E1D1 /* Info-Mac.plist */; };
 		D25460351F75557000F4C4B3 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
+		D29B65801FBAEEC400BBFBDE /* Arcane_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D29B657E1FBAEEC400BBFBDE /* Arcane_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D29B658D1FBAEED000BBFBDE /* Arcane_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D29B658B1FBAEED000BBFBDE /* Arcane_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D29B65911FBAEF0F00BBFBDE /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2751D48DE35002016C5 /* AES.swift */; };
+		D29B65921FBAEF0F00BBFBDE /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
+		D29B65931FBAEF0F00BBFBDE /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */; };
+		D29B65941FBAEF0F00BBFBDE /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FE81CDE99250053BC66 /* Hash.swift */; };
+		D29B65951FBAEF0F00BBFBDE /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF11CDEA8400053BC66 /* HMAC.swift */; };
+		D29B65961FBAEF0F00BBFBDE /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF71CDF22570053BC66 /* Data+Extensions.swift */; };
+		D29B65971FBAEF0F00BBFBDE /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */; };
+		D29B65981FBAEF0F00BBFBDE /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2751D48DE35002016C5 /* AES.swift */; };
+		D29B65991FBAEF0F00BBFBDE /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
+		D29B659A1FBAEF0F00BBFBDE /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */; };
+		D29B659B1FBAEF0F00BBFBDE /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FE81CDE99250053BC66 /* Hash.swift */; };
+		D29B659C1FBAEF0F00BBFBDE /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF11CDEA8400053BC66 /* HMAC.swift */; };
+		D29B659D1FBAEF0F00BBFBDE /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF71CDF22570053BC66 /* Data+Extensions.swift */; };
+		D29B659E1FBAEF0F00BBFBDE /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */; };
 		D2A4E2731D48D7D2002016C5 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */; };
 		D2A4E2741D48D7D6002016C5 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */; };
 		D2A4E2761D48DE35002016C5 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2751D48DE35002016C5 /* AES.swift */; };
@@ -54,6 +70,12 @@
 		D2322A311D4957C300B5E1D1 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D2322A321D4957C300B5E1D1 /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
 		D2322A331D4957C300B5E1D1 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		D29B657C1FBAEEC400BBFBDE /* Arcane_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arcane_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29B657E1FBAEEC400BBFBDE /* Arcane_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arcane_tvOS.h; sourceTree = "<group>"; };
+		D29B657F1FBAEEC400BBFBDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D29B65891FBAEED000BBFBDE /* Arcane_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arcane_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29B658B1FBAEED000BBFBDE /* Arcane_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arcane_watchOS.h; sourceTree = "<group>"; };
+		D29B658C1FBAEED000BBFBDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
 		D2A4E2751D48DE35002016C5 /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
 		D2F18FDF1CDE97220053BC66 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
@@ -70,6 +92,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D29B65781FBAEEC400BBFBDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29B65851FBAEED000BBFBDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5B2E89B1C3A780C00C0327D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,6 +158,24 @@
 			path = ArcaneTests;
 			sourceTree = "<group>";
 		};
+		D29B657D1FBAEEC400BBFBDE /* Arcane-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				D29B657E1FBAEEC400BBFBDE /* Arcane_tvOS.h */,
+				D29B657F1FBAEEC400BBFBDE /* Info.plist */,
+			);
+			path = "Arcane-tvOS";
+			sourceTree = "<group>";
+		};
+		D29B658A1FBAEED000BBFBDE /* Arcane-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				D29B658B1FBAEED000BBFBDE /* Arcane_watchOS.h */,
+				D29B658C1FBAEED000BBFBDE /* Info.plist */,
+			);
+			path = "Arcane-watchOS";
+			sourceTree = "<group>";
+		};
 		D2F18FDE1CDE97100053BC66 /* CCommonCrypto */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +192,8 @@
 				D500FD111C3AABED00782D78 /* Playground-iOS.playground */,
 				D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */,
 				D5C629691C3A809D007F7B7C /* Sources */,
+				D29B657D1FBAEEC400BBFBDE /* Arcane-tvOS */,
+				D29B658A1FBAEED000BBFBDE /* Arcane-watchOS */,
 				D5B2E8A01C3A780C00C0327D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,6 +205,8 @@
 				D5B2E8A91C3A780C00C0327D /* Arcane-iOS-Tests.xctest */,
 				D5C629401C3A7FAA007F7B7C /* Arcane.framework */,
 				D5C629491C3A7FAA007F7B7C /* Arcane-Mac-Tests.xctest */,
+				D29B657C1FBAEEC400BBFBDE /* Arcane_tvOS.framework */,
+				D29B65891FBAEED000BBFBDE /* Arcane_watchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +229,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		D29B65791FBAEEC400BBFBDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29B65801FBAEEC400BBFBDE /* Arcane_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29B65861FBAEED000BBFBDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29B658D1FBAEED000BBFBDE /* Arcane_watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5B2E89C1C3A780C00C0327D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,6 +262,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D29B657B1FBAEEC400BBFBDE /* Arcane-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D29B65831FBAEEC400BBFBDE /* Build configuration list for PBXNativeTarget "Arcane-tvOS" */;
+			buildPhases = (
+				D29B65771FBAEEC400BBFBDE /* Sources */,
+				D29B65781FBAEEC400BBFBDE /* Frameworks */,
+				D29B65791FBAEEC400BBFBDE /* Headers */,
+				D29B657A1FBAEEC400BBFBDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Arcane-tvOS";
+			productName = "Arcane-tvOS";
+			productReference = D29B657C1FBAEEC400BBFBDE /* Arcane_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D29B65881FBAEED000BBFBDE /* Arcane-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D29B658E1FBAEED000BBFBDE /* Build configuration list for PBXNativeTarget "Arcane-watchOS" */;
+			buildPhases = (
+				D29B65841FBAEED000BBFBDE /* Sources */,
+				D29B65851FBAEED000BBFBDE /* Frameworks */,
+				D29B65861FBAEED000BBFBDE /* Headers */,
+				D29B65871FBAEED000BBFBDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Arcane-watchOS";
+			productName = "Arcane-watchOS";
+			productReference = D29B65891FBAEED000BBFBDE /* Arcane_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D5B2E89E1C3A780C00C0327D /* Arcane-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5B2E8B31C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Arcane-iOS" */;
@@ -224,9 +334,9 @@
 			productReference = D5B2E8A91C3A780C00C0327D /* Arcane-iOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D5C6293F1C3A7FAA007F7B7C /* Arcane-Mac */ = {
+		D5C6293F1C3A7FAA007F7B7C /* Arcane-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-Mac" */;
+			buildConfigurationList = D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-macOS" */;
 			buildPhases = (
 				D5C6293B1C3A7FAA007F7B7C /* Sources */,
 				D5C6293C1C3A7FAA007F7B7C /* Frameworks */,
@@ -237,14 +347,14 @@
 			);
 			dependencies = (
 			);
-			name = "Arcane-Mac";
+			name = "Arcane-macOS";
 			productName = "CommonCryptoSwift-Mac";
 			productReference = D5C629401C3A7FAA007F7B7C /* Arcane.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D5C629481C3A7FAA007F7B7C /* Arcane-Mac-Tests */ = {
+		D5C629481C3A7FAA007F7B7C /* Arcane-macOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-Mac-Tests" */;
+			buildConfigurationList = D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-macOS-Tests" */;
 			buildPhases = (
 				D5C629451C3A7FAA007F7B7C /* Sources */,
 				D5C629461C3A7FAA007F7B7C /* Frameworks */,
@@ -255,7 +365,7 @@
 			dependencies = (
 				D5C6294C1C3A7FAA007F7B7C /* PBXTargetDependency */,
 			);
-			name = "Arcane-Mac-Tests";
+			name = "Arcane-macOS-Tests";
 			productName = "CommonCryptoSwift-MacTests";
 			productReference = D5C629491C3A7FAA007F7B7C /* Arcane-Mac-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -270,6 +380,14 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Fantageek;
 				TargetAttributes = {
+					D29B657B1FBAEEC400BBFBDE = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D29B65881FBAEED000BBFBDE = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					D5B2E89E1C3A780C00C0327D = {
 						CreatedOnToolsVersion = 7.2;
 						LastSwiftMigration = 0900;
@@ -299,14 +417,30 @@
 			projectRoot = "";
 			targets = (
 				D5B2E89E1C3A780C00C0327D /* Arcane-iOS */,
-				D5C6293F1C3A7FAA007F7B7C /* Arcane-Mac */,
+				D5C6293F1C3A7FAA007F7B7C /* Arcane-macOS */,
 				D5B2E8A81C3A780C00C0327D /* Arcane-iOS-Tests */,
-				D5C629481C3A7FAA007F7B7C /* Arcane-Mac-Tests */,
+				D5C629481C3A7FAA007F7B7C /* Arcane-macOS-Tests */,
+				D29B657B1FBAEEC400BBFBDE /* Arcane-tvOS */,
+				D29B65881FBAEED000BBFBDE /* Arcane-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D29B657A1FBAEEC400BBFBDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29B65871FBAEED000BBFBDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5B2E89D1C3A780C00C0327D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,6 +475,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D29B65771FBAEEC400BBFBDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29B659A1FBAEF0F00BBFBDE /* Crypto.swift in Sources */,
+				D29B659C1FBAEF0F00BBFBDE /* HMAC.swift in Sources */,
+				D29B659B1FBAEF0F00BBFBDE /* Hash.swift in Sources */,
+				D29B659D1FBAEF0F00BBFBDE /* Data+Extensions.swift in Sources */,
+				D29B65991FBAEF0F00BBFBDE /* Base64.swift in Sources */,
+				D29B65981FBAEF0F00BBFBDE /* AES.swift in Sources */,
+				D29B659E1FBAEF0F00BBFBDE /* Obfuscator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29B65841FBAEED000BBFBDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29B65931FBAEF0F00BBFBDE /* Crypto.swift in Sources */,
+				D29B65951FBAEF0F00BBFBDE /* HMAC.swift in Sources */,
+				D29B65941FBAEF0F00BBFBDE /* Hash.swift in Sources */,
+				D29B65961FBAEF0F00BBFBDE /* Data+Extensions.swift in Sources */,
+				D29B65921FBAEF0F00BBFBDE /* Base64.swift in Sources */,
+				D29B65911FBAEF0F00BBFBDE /* AES.swift in Sources */,
+				D29B65971FBAEF0F00BBFBDE /* Obfuscator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5B2E89A1C3A780C00C0327D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,12 +557,128 @@
 		};
 		D5C6294C1C3A7FAA007F7B7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D5C6293F1C3A7FAA007F7B7C /* Arcane-Mac */;
+			target = D5C6293F1C3A7FAA007F7B7C /* Arcane-macOS */;
 			targetProxy = D5C6294B1C3A7FAA007F7B7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D29B65811FBAEEC400BBFBDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Arcane-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		D29B65821FBAEEC400BBFBDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Arcane-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+		D29B658F1FBAEED000BBFBDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Arcane-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		D29B65901FBAEED000BBFBDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Arcane-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
 		D5B2E8B11C3A780C00C0327D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -683,6 +961,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D29B65831FBAEEC400BBFBDE /* Build configuration list for PBXNativeTarget "Arcane-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29B65811FBAEEC400BBFBDE /* Debug */,
+				D29B65821FBAEEC400BBFBDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D29B658E1FBAEED000BBFBDE /* Build configuration list for PBXNativeTarget "Arcane-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29B658F1FBAEED000BBFBDE /* Debug */,
+				D29B65901FBAEED000BBFBDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D5B2E8991C3A780C00C0327D /* Build configuration list for PBXProject "Arcane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -710,7 +1006,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-Mac" */ = {
+		D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5C629521C3A7FAA007F7B7C /* Debug */,
@@ -719,7 +1015,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-Mac-Tests" */ = {
+		D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-macOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5C629551C3A7FAA007F7B7C /* Debug */,
