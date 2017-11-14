@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Arcane"
   s.summary          = "CommonCrypto in Swift"
-  s.version          = "1.0.0"
+  s.version          = "1.1.0"
   s.homepage         = "https://github.com/onmyway133/Arcane"
   s.license          = 'MIT'
   s.author           = { "Khoa Pham" => "onmyway133@gmail.com" }
@@ -19,9 +19,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Sources/**/*.swift'
 
-  #s.preserve_paths = 'Sources/CCommonCrypto/module.modulemap'
-  #s.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Arcane/Sources/CCommonCrypto' }
-
   s.preserve_paths = 'CocoaPods/**/*'
   s.pod_target_xcconfig = {
     'SWIFT_INCLUDE_PATHS[sdk=macosx*]'           => '$(PODS_ROOT)/Arcane/CocoaPods/macosx',
@@ -30,7 +27,8 @@ Pod::Spec.new do |s|
     'SWIFT_INCLUDE_PATHS[sdk=appletvos*]'        => '$(PODS_ROOT)/Arcane/CocoaPods/appletvos',
     'SWIFT_INCLUDE_PATHS[sdk=appletvsimulator*]' => '$(PODS_ROOT)/Arcane/CocoaPods/appletvsimulator',
     'SWIFT_INCLUDE_PATHS[sdk=watchos*]'          => '$(PODS_ROOT)/Arcane/CocoaPods/watchos',
-    'SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]'   => '$(PODS_ROOT)/Arcane/CocoaPods/watchsimulator'
+    'SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]'   => '$(PODS_ROOT)/Arcane/CocoaPods/watchsimulator',
+    'SWIFT_VERSION' => '4.0'
   }
 
 end
