@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D5C629481C3A7FAA007F7B7C"
+               BuildableName = "Arcane-Mac-Tests.xctest"
+               BlueprintName = "Arcane-macOS-Tests"
+               ReferencedContainer = "container:Arcane.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D5C6293F1C3A7FAA007F7B7C"
+            BuildableName = "Arcane.framework"
+            BlueprintName = "Arcane-macOS"
+            ReferencedContainer = "container:Arcane.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
