@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D29B657B1FBAEEC400BBFBDE"
-               BuildableName = "Arcane_tvOS.framework"
+               BuildableName = "Arcane.framework"
                BlueprintName = "Arcane-tvOS"
                ReferencedContainer = "container:Arcane.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D29B657B1FBAEEC400BBFBDE"
-            BuildableName = "Arcane_tvOS.framework"
+            BuildableName = "Arcane.framework"
             BlueprintName = "Arcane-tvOS"
             ReferencedContainer = "container:Arcane.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D29B657B1FBAEEC400BBFBDE"
-            BuildableName = "Arcane_tvOS.framework"
+            BuildableName = "Arcane.framework"
             BlueprintName = "Arcane-tvOS"
             ReferencedContainer = "container:Arcane.xcodeproj">
          </BuildableReference>

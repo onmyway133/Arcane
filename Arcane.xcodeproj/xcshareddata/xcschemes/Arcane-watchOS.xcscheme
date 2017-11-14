@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D29B65881FBAEED000BBFBDE"
-               BuildableName = "Arcane_watchOS.framework"
+               BuildableName = "Arcane.framework"
                BlueprintName = "Arcane-watchOS"
                ReferencedContainer = "container:Arcane.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D29B65881FBAEED000BBFBDE"
-            BuildableName = "Arcane_watchOS.framework"
+            BuildableName = "Arcane.framework"
             BlueprintName = "Arcane-watchOS"
             ReferencedContainer = "container:Arcane.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D29B65881FBAEED000BBFBDE"
-            BuildableName = "Arcane_watchOS.framework"
+            BuildableName = "Arcane.framework"
             BlueprintName = "Arcane-watchOS"
             ReferencedContainer = "container:Arcane.xcodeproj">
          </BuildableReference>
