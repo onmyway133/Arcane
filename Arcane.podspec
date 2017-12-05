@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Arcane"
   s.summary          = "CommonCrypto in Swift"
-  s.version          = "1.2.0"
+  s.version          = "1.2.1"
   s.homepage         = "https://github.com/onmyway133/Arcane"
   s.license          = 'MIT'
   s.author           = { "Khoa Pham" => "onmyway133@gmail.com" }
