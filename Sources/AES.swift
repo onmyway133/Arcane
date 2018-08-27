@@ -13,40 +13,55 @@ public struct AES {
 
   // MARK: - Data
 
-  public static func encrypt(_ data: Data, key: Data) -> Data? {
-    return perform(data, key: key, encrypting: true)
+  public static func encrypt(_ data: Data, key: Data, keySize: Int = kCCKeySizeAES128) -> Data? {
+    return perform(data, key: key, keySize: keySize, encrypting: true)
   }
 
-  public static func decrypt(_ data: Data, key: Data) -> Data? {
-    return perform(data, key: key, encrypting: false)
+  public static func decrypt(_ data: Data, key: Data, keySize: Int = kCCKeySizeAES128) -> Data? {
+    return perform(data, key: key, keySize: keySize, encrypting: false)
   }
 
   // MARK: - String
 
-  public static func encrypt(_ string: String, key: String) -> String? {
+  public static func encrypt(_ string: String, key: String, keySize: Int = kCCKeySizeAES128) -> String? {
     guard let data = string.data(using: String.Encoding.utf8),
       let keyData = key.data(using: String.Encoding.utf8) else { return nil }
 
-    let encrypted = perform(data, key: keyData, encrypting: true)
+    let encrypted = perform(data, key: keyData, keySize: keySize, encrypting: true)
     return encrypted?.base64EncodedString(options: .lineLength64Characters)
   }
 
-  public static func decrypt(_ string: String, key: String) -> String? {
+  public static func decrypt(_ string: String, key: String, keySize: Int = kCCKeySizeAES128) -> String? {
     guard let data = Data(base64Encoded: string, options: .ignoreUnknownCharacters),
       let keyData = key.data(using: String.Encoding.utf8) else { return nil }
 
-    guard let decrypted = perform(data, key: keyData, encrypting: false) else { return nil }
+    guard let decrypted = perform(data, key: keyData, keySize: keySize, encrypting: false) else { return nil }
     return String(data: decrypted, encoding: String.Encoding.utf8)
   }
 
   // MARK: - Private
-
-  fileprivate static func perform(_ data: Data, key: Data, encrypting: Bool) -> Data? {
+	
+  fileprivate static func perform(_ data: Data, key: Data, keySize: Int = kCCKeySizeAES128, encrypting: Bool) -> Data? {
     guard let out = NSMutableData(length: data.count + kCCBlockSizeAES128) else { return nil }
 
     let hashData = Hash.SHA384(key)
-    let hashKeyData = hashData.subdata(in: 0..<32)
-    let ivData = hashData.subdata(in: 32..<48)
+
+    // kCCKeySizeAES128 by default
+    var keyRange: Range<Int> = 0..<16
+    var ivRange: Range<Int> = 16..<32
+
+    switch keySize {
+    case kCCKeySizeAES192:
+      keyRange = 0..<24
+      ivRange = 24..<40
+    case kCCKeySizeAES256:
+      keyRange = 0..<32
+      ivRange = 32..<48
+    default: ()
+    }
+
+    let hashKeyData = hashData.subdata(in: keyRange)
+    let ivData = hashData.subdata(in: ivRange)
 
     let operation = encrypting ? kCCEncrypt : kCCDecrypt
     var dataOutMovedLength: size_t = 0
@@ -56,7 +71,7 @@ public struct AES {
       CCAlgorithm(kCCAlgorithmAES128),
       CCOptions(kCCOptionPKCS7Padding),
       (hashKeyData as NSData).bytes,
-      kCCKeySizeAES128,
+      keySize,
       (ivData as NSData).bytes,
       (data as NSData).bytes,
       size_t(data.count),
