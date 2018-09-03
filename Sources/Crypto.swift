@@ -12,14 +12,24 @@ import CCommonCrypto
 typealias DigestMethod = (_ data: UnsafeRawPointer,
   _ len: CC_LONG, _ md: UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8>
 
-struct Crypto {
+public struct Crypto {
   enum Method {
     case MD2, MD4, MD5, SHA1, SHA224, SHA256, SHA384, SHA512
+    
+    var type: String {
+        switch self {
+        case .MD2, .MD4:
+            return "MD2 or MD4"
+        default:
+            return "SHA"
+        }
+    }
   }
 
   let length: Int32
   let methodKind: Method
   let HMACAlgorithm: CCHmacAlgorithm?
+    
 
   init(length: Int32, methodKind: Method, HMACAlgorithm: CCHmacAlgorithm?) {
     self.length = (length)
