@@ -9,81 +9,50 @@
 import Foundation
 import CCommonCrypto
 
-public struct HMAC {
-
-  public enum DigestType {
-    case hex
-    case base64
-  }
-
-  // MARK: - NSData
-
-  public static func MD5(_ data: Data, key: Data) -> Data? {
-    return HMAC.generate(data, key: key, crypto: .MD5)
-  }
-
-  public static func SHA1(_ data: Data, key: Data) -> Data? {
-    return HMAC.generate(data, key: key, crypto: .SHA1)
-  }
-
-  public static func SHA224(_ data: Data, key: Data) -> Data? {
-    return HMAC.generate(data, key: key, crypto: .SHA224)
-  }
-
-  public static func SHA256(_ data: Data, key: Data) -> Data? {
-    return HMAC.generate(data, key: key, crypto: .SHA256)
-  }
-
-  public static func SHA384(_ data: Data, key: Data) -> Data? {
-    return HMAC.generate(data, key: key, crypto: .SHA384)
-  }
-
-  public static func SHA512(_ data: Data, key: Data) -> Data? {
-    return HMAC.generate(data, key: key, crypto: .SHA512)
-  }
-
-  static func generate(_ data: Data, key: Data, crypto: Crypto) -> Data? {
-    guard let HMACAlgorithm = crypto.HMACAlgorithm else { return nil }
-
-    // Can also use UnsafeMutablePointer<CUnsignedChar>.alloc(Int(crypto.length))
-    var buffer = Array<UInt8>(repeating: 0, count: Int(crypto.length))
-    CCHmac(HMACAlgorithm, (key as NSData).bytes, key.count, (data as NSData).bytes, data.count, &buffer)
-
-    return Data(bytes: UnsafePointer<UInt8>(buffer), count: Int(crypto.length))
-  }
-
-  // MARK: - String
-
-  public static func MD5(_ string: String, key: String, digest: DigestType = .hex) -> String? {
-    return HMAC.generate(string, key: key, crypto: .MD5, digest: digest)
-  }
-
-  public static func SHA1(_ string: String, key: String, digest: DigestType = .hex) -> String? {
-    return HMAC.generate(string, key: key, crypto: .SHA1, digest: digest)
-  }
-
-  public static func SHA224(_ string: String, key: String, digest: DigestType = .hex) -> String? {
-    return HMAC.generate(string, key: key, crypto: .SHA224, digest: digest)
-  }
-
-  public static func SHA256(_ string: String, key: String, digest: DigestType = .hex) -> String? {
-    return HMAC.generate(string, key: key, crypto: .SHA256, digest: digest)
-  }
-
-  public static func SHA384(_ string: String, key: String, digest: DigestType = .hex) -> String? {
-    return HMAC.generate(string, key: key, crypto: .SHA384, digest: digest)
-  }
-
-  public static func SHA512(_ string: String, key: String, digest: DigestType = .hex) -> String? {
-    return HMAC.generate(string, key: key, crypto: .SHA512, digest: digest)
-  }
-
-  static func generate(_ string: String, key: String, crypto: Crypto, digest: DigestType) -> String? {
-    guard let data = string.data(using: String.Encoding.utf8),
-      let keyData = key.data(using: String.Encoding.utf8),
-      let generatedData = HMAC.generate(data, key: keyData, crypto: crypto)
-      else { return nil }
-
-    return digest == .hex ? generatedData.hexString : generatedData.base64String
-  }
+public extension Data {
+    public func HMACMD5(with key: String) -> Data? {
+        return _HMAC(utf8Key: key, crypto: .MD5)
+    }
+    public func HMACSHA1(with key: String) -> Data? {
+        return _HMAC(utf8Key: key, crypto: .SHA1)
+    }
+    public func HMACSHA224(with key: String) -> Data? {
+        return _HMAC(utf8Key: key, crypto: .SHA224)
+    }
+    public func HMACSHA256(with key: String) -> Data? {
+        return _HMAC(utf8Key: key, crypto: .SHA256)
+    }
+    public func HMACSHA384(with key: String) -> Data? {
+        return _HMAC(utf8Key: key, crypto: .SHA384)
+    }
+    public func HMACSHA512(with key: String) -> Data? {
+        return _HMAC(utf8Key: key, crypto: .SHA512)
+    }
+    /// not use for public. Public method should use **throw** version
+    private func _HMAC(utf8Key: String, crypto: Crypto) -> Data? {
+        do {
+            return try HMAC(utf8Key: utf8Key, crypto: .MD5)
+        } catch {
+            return nil
+        }
+    }
+    
+    public func HMAC(utf8Key: String, crypto: Crypto) throws -> Data {
+        guard let keyData = utf8Key.data(using: .utf8) else {
+            throw ArcaneError.nilKeyType("| encode with utf8 |")
+        }
+        return try HMAC(keyData, crypto: crypto)
+    }
+    
+    public func HMAC(_ key: Data, crypto: Crypto) throws -> Data  {
+        guard let HMACAlgorithm = crypto.HMACAlgorithm else {
+            throw ArcaneError.wrongAlgorithm(crypto)
+        }
+        
+        // Can also use UnsafeMutablePointer<CUnsignedChar>.alloc(Int(crypto.length))
+        var buffer = Array<UInt8>(repeating: 0, count: Int(crypto.length))
+        CCHmac(HMACAlgorithm, (key as NSData).bytes, key.count, (self as NSData).bytes, self.count, &buffer)
+        
+        return Data(bytes: UnsafePointer<UInt8>(buffer), count: Int(crypto.length))
+    }
 }

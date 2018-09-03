@@ -9,86 +9,94 @@
 import Foundation
 import CCommonCrypto
 
-public struct Hash {
-
-  // MARK: - NSData
-
-  public static func MD2(_ data: Data) -> Data {
-    return Hash.hash(data, crypto: .MD2)
-  }
-
-  public static func MD4(_ data: Data) -> Data {
-    return Hash.hash(data, crypto: .MD4)
-  }
-
-  public static func MD5(_ data: Data) -> Data {
-    return Hash.hash(data, crypto: .MD5)
-  }
-
-  public static func SHA1(_ data: Data) -> Data {
-    return Hash.hash(data, crypto: .SHA1)
-  }
-
-  public static func SHA224(_ data: Data) -> Data {
-    return Hash.hash(data, crypto: .SHA224)
-  }
-
-  public static func SHA256(_ data: Data) -> Data {
-    return Hash.hash(data, crypto: .SHA256)
-  }
-
-  public static func SHA384(_ data: Data) -> Data {
-    return Hash.hash(data, crypto: .SHA384)
-  }
-
-  public static func SHA512(_ data: Data) -> Data {
-    return Hash.hash(data, crypto: .SHA512)
-  }
-
-  static func hash(_ data: Data, crypto: Crypto) -> Data {
-    var buffer = Array<UInt8>(repeating: 0, count: Int(crypto.length))
-    crypto.method(data: (data as NSData).bytes, length: UInt32(data.count), buffer: &buffer)
-
-    return Data(bytes: UnsafePointer<UInt8>(buffer), count: buffer.count)
-  }
-
-  // MARK: - String
-
-  public static func MD2(_ string: String) -> String? {
-    return Hash.hash(string, crypto: .MD2)
-  }
-
-  public static func MD4(_ string: String) -> String? {
-    return Hash.hash(string, crypto: .MD4)
-  }
-
-  public static func MD5(_ string: String) -> String? {
-    return Hash.hash(string, crypto: .MD5)
-  }
-
-  public static func SHA1(_ string: String) -> String? {
-    return Hash.hash(string, crypto: .SHA1)
-  }
-
-  public static func SHA224(_ string: String) -> String? {
-    return Hash.hash(string, crypto: .SHA224)
-  }
-
-  public static func SHA256(_ string: String) -> String? {
-    return Hash.hash(string, crypto: .SHA256)
-  }
-
-  public static func SHA384(_ string: String) -> String? {
-    return Hash.hash(string, crypto: .SHA384)
-  }
-
-  public static func SHA512(_ string: String) -> String? {
-    return Hash.hash(string, crypto: .SHA512)
-  }
-
-  static func hash(_ string: String, crypto: Crypto) -> String? {
-    guard let data = string.data(using: String.Encoding.utf8) else { return nil }
-
-    return Hash.hash(data, crypto: crypto).hexString
-  }
+public extension Data {
+    public var MD2: Data {
+        return hash(with: .MD2)
+    }
+    
+    public var MD4: Data {
+        return hash(with: .MD4)
+    }
+    
+    public var MD5: Data {
+        return hash(with: .MD5)
+    }
+    
+    public var SHA1: Data {
+        return hash(with: .SHA1)
+    }
+    
+    public var SHA224: Data {
+        return hash(with: .SHA224)
+    }
+    
+    public var SHA256: Data {
+        return hash(with: .SHA256)
+    }
+    
+    public var SHA384: Data {
+        return hash(with: .SHA384)
+    }
+    
+    public var SHA512: Data {
+        return hash(with: .SHA512)
+    }
+    
+    public func hash(with crypto: Crypto) -> Data {
+        var buffer = Array<UInt8>(repeating: 0, count: Int(crypto.length))
+        crypto.method(data: (self as NSData).bytes, length: UInt32(self.count), buffer: &buffer)
+        
+        return Data(bytes: UnsafePointer<UInt8>(buffer), count: buffer.count)
+    }
 }
+
+extension String {
+    public var MD2: Data? {
+        return _hash_utf8(crypto: .MD2)
+    }
+    
+    public var MD4: Data? {
+        return _hash_utf8(crypto: .MD4)
+    }
+    
+    public var MD5: Data? {
+        return _hash_utf8(crypto: .MD5)
+    }
+    
+    public var SHA1: Data? {
+        return _hash_utf8(crypto: .SHA1)
+    }
+    
+    public var SHA224: Data? {
+        return _hash_utf8(crypto: .SHA224)
+    }
+    
+    public var SHA256: Data? {
+        return _hash_utf8(crypto: .SHA256)
+    }
+    
+    public var SHA384: Data? {
+        return _hash_utf8(crypto: .SHA384)
+    }
+    
+    public var SHA512: Data? {
+        return _hash_utf8(crypto: .SHA512)
+    }
+    
+    private func _hash_utf8(crypto: Crypto) -> Data? {
+        do {
+            return try hash_utf8(crypto)
+        } catch {
+            return nil
+        }
+    }
+    
+    /// **Warning: String must be utf8 encoding**
+    public func hash_utf8(_ crypto: Crypto) throws -> Data {
+        guard let data = self.data(using: .utf8) else {
+            throw ArcaneError.nilKeyType("| encode with utf8 |")
+        }
+        return data.hash(with: crypto)
+    }
+}
+

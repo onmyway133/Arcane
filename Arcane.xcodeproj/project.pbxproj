@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A3D7961A1D75337300A35114 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
+		015C05AC213D248600A3C804 /* ArcaneError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C05AB213D248600A3C804 /* ArcaneError.swift */; };
+		015C05AD213D248A00A3C804 /* ArcaneError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C05AB213D248600A3C804 /* ArcaneError.swift */; };
+		015C05AE213D248A00A3C804 /* ArcaneError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C05AB213D248600A3C804 /* ArcaneError.swift */; };
+		015C05AF213D248A00A3C804 /* ArcaneError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C05AB213D248600A3C804 /* ArcaneError.swift */; };
 		D200AB4A1D495DFC004C40FC /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2322A331D4957C300B5E1D1 /* Tests.swift */; };
 		D200AB4B1D495DFD004C40FC /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2322A331D4957C300B5E1D1 /* Tests.swift */; };
 		D2322A351D4957C300B5E1D1 /* Info-Mac.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2322A2F1D4957C300B5E1D1 /* Info-Mac.plist */; };
-		D25460351F75557000F4C4B3 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
 		D29B65911FBAEF0F00BBFBDE /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2751D48DE35002016C5 /* AES.swift */; };
-		D29B65921FBAEF0F00BBFBDE /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
 		D29B65931FBAEF0F00BBFBDE /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */; };
 		D29B65941FBAEF0F00BBFBDE /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FE81CDE99250053BC66 /* Hash.swift */; };
 		D29B65951FBAEF0F00BBFBDE /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF11CDEA8400053BC66 /* HMAC.swift */; };
 		D29B65961FBAEF0F00BBFBDE /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF71CDF22570053BC66 /* Data+Extensions.swift */; };
 		D29B65971FBAEF0F00BBFBDE /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */; };
 		D29B65981FBAEF0F00BBFBDE /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2751D48DE35002016C5 /* AES.swift */; };
-		D29B65991FBAEF0F00BBFBDE /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
 		D29B659A1FBAEF0F00BBFBDE /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */; };
 		D29B659B1FBAEF0F00BBFBDE /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FE81CDE99250053BC66 /* Hash.swift */; };
 		D29B659C1FBAEF0F00BBFBDE /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF11CDEA8400053BC66 /* HMAC.swift */; };
@@ -69,7 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A3D796191D75337300A35114 /* Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
+		015C05AB213D248600A3C804 /* ArcaneError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcaneError.swift; sourceTree = "<group>"; };
 		D2322A2E1D4957C300B5E1D1 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D2322A2F1D4957C300B5E1D1 /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
 		D2322A311D4957C300B5E1D1 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -209,7 +209,7 @@
 			children = (
 				D2F18FDE1CDE97100053BC66 /* CCommonCrypto */,
 				D2A4E2751D48DE35002016C5 /* AES.swift */,
-				A3D796191D75337300A35114 /* Base64.swift */,
+				015C05AB213D248600A3C804 /* ArcaneError.swift */,
 				D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */,
 				D2F18FE81CDE99250053BC66 /* Hash.swift */,
 				D2F18FF11CDEA8400053BC66 /* HMAC.swift */,
@@ -502,8 +502,8 @@
 				D29B659C1FBAEF0F00BBFBDE /* HMAC.swift in Sources */,
 				D29B659B1FBAEF0F00BBFBDE /* Hash.swift in Sources */,
 				D29B659D1FBAEF0F00BBFBDE /* Data+Extensions.swift in Sources */,
-				D29B65991FBAEF0F00BBFBDE /* Base64.swift in Sources */,
 				D29B65981FBAEF0F00BBFBDE /* AES.swift in Sources */,
+				015C05AE213D248A00A3C804 /* ArcaneError.swift in Sources */,
 				D29B659E1FBAEF0F00BBFBDE /* Obfuscator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,8 +516,8 @@
 				D29B65951FBAEF0F00BBFBDE /* HMAC.swift in Sources */,
 				D29B65941FBAEF0F00BBFBDE /* Hash.swift in Sources */,
 				D29B65961FBAEF0F00BBFBDE /* Data+Extensions.swift in Sources */,
-				D29B65921FBAEF0F00BBFBDE /* Base64.swift in Sources */,
 				D29B65911FBAEF0F00BBFBDE /* AES.swift in Sources */,
+				015C05AF213D248A00A3C804 /* ArcaneError.swift in Sources */,
 				D29B65971FBAEF0F00BBFBDE /* Obfuscator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,10 +536,10 @@
 			files = (
 				D2F18FF81CDF22570053BC66 /* Data+Extensions.swift in Sources */,
 				D2A4E2761D48DE35002016C5 /* AES.swift in Sources */,
-				A3D7961A1D75337300A35114 /* Base64.swift in Sources */,
 				D2F18FE91CDE99250053BC66 /* Hash.swift in Sources */,
 				D2F18FF21CDEA8400053BC66 /* HMAC.swift in Sources */,
 				D2F18FEF1CDEA2E70053BC66 /* Crypto.swift in Sources */,
+				015C05AC213D248600A3C804 /* ArcaneError.swift in Sources */,
 				D2A4E2731D48D7D2002016C5 /* Obfuscator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,10 +558,10 @@
 			files = (
 				D2F18FF91CDF22570053BC66 /* Data+Extensions.swift in Sources */,
 				D2A4E2771D48DE35002016C5 /* AES.swift in Sources */,
-				D25460351F75557000F4C4B3 /* Base64.swift in Sources */,
 				D2F18FEA1CDE99250053BC66 /* Hash.swift in Sources */,
 				D2F18FF31CDEA8400053BC66 /* HMAC.swift in Sources */,
 				D2F18FF01CDEA2E70053BC66 /* Crypto.swift in Sources */,
+				015C05AD213D248A00A3C804 /* ArcaneError.swift in Sources */,
 				D2A4E2741D48D7D6002016C5 /* Obfuscator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

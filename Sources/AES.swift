@@ -44,7 +44,7 @@ public struct AES {
   fileprivate static func perform(_ data: Data, key: Data, keySize: Int = kCCKeySizeAES128, encrypting: Bool) -> Data? {
     guard let out = NSMutableData(length: data.count + kCCBlockSizeAES128) else { return nil }
 
-    let hashData = Hash.SHA384(key)
+    let hashData = key.SHA384
 
     // kCCKeySizeAES128 by default
     var keyRange: Range<Int> = 0..<16
