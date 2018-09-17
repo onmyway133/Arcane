@@ -121,7 +121,6 @@
 				D5C7F73D1C3BC9CE008CDDBA /* Frameworks */,
 				D5C7F73E1C3BC9CE008CDDBA /* Resources */,
 				72C41EF3BE42A129915953C0 /* [CP] Embed Pods Frameworks */,
-				82800318183A892E7FE9FDE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,21 +212,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommonCryptoSwiftDemo/Pods-CommonCryptoSwiftDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82800318183A892E7FE9FDE0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommonCryptoSwiftDemo/Pods-CommonCryptoSwiftDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
