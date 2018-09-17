@@ -247,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D29B65831FBAEEC400BBFBDE /* Build configuration list for PBXNativeTarget "Arcane-tvOS" */;
 			buildPhases = (
+				D0519313214FFCBE0047AB2D /* Run Script: CommonCrypto */,
 				D29B65771FBAEEC400BBFBDE /* Sources */,
 				D29B65781FBAEEC400BBFBDE /* Frameworks */,
 				D29B65791FBAEEC400BBFBDE /* Headers */,
@@ -265,6 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D29B658E1FBAEED000BBFBDE /* Build configuration list for PBXNativeTarget "Arcane-watchOS" */;
 			buildPhases = (
+				D0519314214FFCD20047AB2D /* Run Script: CommonCrypto */,
 				D29B65841FBAEED000BBFBDE /* Sources */,
 				D29B65851FBAEED000BBFBDE /* Frameworks */,
 				D29B65861FBAEED000BBFBDE /* Headers */,
@@ -301,6 +303,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5B2E8B31C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Arcane-iOS" */;
 			buildPhases = (
+				D0519311214FFC8E0047AB2D /* Run Script: CommonCrypto */,
 				D5B2E89A1C3A780C00C0327D /* Sources */,
 				D5B2E89B1C3A780C00C0327D /* Frameworks */,
 				D5B2E89C1C3A780C00C0327D /* Headers */,
@@ -337,6 +340,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-macOS" */;
 			buildPhases = (
+				D0519312214FFCAB0047AB2D /* Run Script: CommonCrypto */,
 				D5C6293B1C3A7FAA007F7B7C /* Sources */,
 				D5C6293C1C3A7FAA007F7B7C /* Frameworks */,
 				D5C6293D1C3A7FAA007F7B7C /* Headers */,
@@ -482,6 +486,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0519311214FFC8E0047AB2D /* Run Script: CommonCrypto */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: CommonCrypto";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/Build-Phases/common-crypto.sh  \n";
+		};
+		D0519312214FFCAB0047AB2D /* Run Script: CommonCrypto */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: CommonCrypto";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/Build-Phases/common-crypto.sh\n";
+		};
+		D0519313214FFCBE0047AB2D /* Run Script: CommonCrypto */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: CommonCrypto";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/Build-Phases/common-crypto.sh\n";
+		};
+		D0519314214FFCD20047AB2D /* Run Script: CommonCrypto */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: CommonCrypto";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/Build-Phases/common-crypto.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D29B65771FBAEEC400BBFBDE /* Sources */ = {
