@@ -168,7 +168,8 @@
 				D2322A321D4957C300B5E1D1 /* Info-macOS.plist */,
 				D2322A331D4957C300B5E1D1 /* Tests.swift */,
 			);
-			path = ArcaneTests;
+			name = ArcaneTests;
+			path = Tests/ArcaneTests;
 			sourceTree = "<group>";
 		};
 		D5B2E8951C3A780C00C0327D = {
@@ -206,7 +207,8 @@
 				D2F18FF71CDF22570053BC66 /* Data+Extensions.swift */,
 				D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */,
 			);
-			path = Sources;
+			name = Sources;
+			path = Sources/Arcane;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -771,7 +773,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/ArcaneTests/Info-tvOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/ArcaneTests/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-tvOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -792,7 +794,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/ArcaneTests/Info-tvOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/ArcaneTests/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-tvOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -964,7 +966,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/ArcaneTests/Info-iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/ArcaneTests/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.CommonCryptoSwiftTests;
 				PRODUCT_NAME = "Arcane-iOS-Tests";
@@ -977,7 +979,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/ArcaneTests/Info-iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/ArcaneTests/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.CommonCryptoSwiftTests;
 				PRODUCT_NAME = "Arcane-iOS-Tests";
@@ -1035,7 +1037,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/ArcaneTests/Info-macOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/ArcaneTests/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.CommonCryptoSwift-MacTests";
@@ -1050,7 +1052,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/ArcaneTests/Info-macOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/ArcaneTests/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.CommonCryptoSwift-MacTests";
