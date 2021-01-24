@@ -6,1137 +6,515 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		"Arcane::ArcanePackageTests::ProductTarget" /* ArcanePackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_36 /* Build configuration list for PBXAggregateTarget "ArcanePackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_39 /* PBXTargetDependency */,
+			);
+			name = ArcanePackageTests;
+			productName = ArcanePackageTests;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		A3D7961A1D75337300A35114 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
-		D200AB4A1D495DFC004C40FC /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2322A331D4957C300B5E1D1 /* Tests.swift */; };
-		D200AB4B1D495DFD004C40FC /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2322A331D4957C300B5E1D1 /* Tests.swift */; };
-		D2322A351D4957C300B5E1D1 /* Info-Mac.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2322A2F1D4957C300B5E1D1 /* Info-Mac.plist */; };
-		D25460351F75557000F4C4B3 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
-		D29B65911FBAEF0F00BBFBDE /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2751D48DE35002016C5 /* AES.swift */; };
-		D29B65921FBAEF0F00BBFBDE /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
-		D29B65931FBAEF0F00BBFBDE /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */; };
-		D29B65941FBAEF0F00BBFBDE /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FE81CDE99250053BC66 /* Hash.swift */; };
-		D29B65951FBAEF0F00BBFBDE /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF11CDEA8400053BC66 /* HMAC.swift */; };
-		D29B65961FBAEF0F00BBFBDE /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF71CDF22570053BC66 /* Data+Extensions.swift */; };
-		D29B65971FBAEF0F00BBFBDE /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */; };
-		D29B65981FBAEF0F00BBFBDE /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2751D48DE35002016C5 /* AES.swift */; };
-		D29B65991FBAEF0F00BBFBDE /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D796191D75337300A35114 /* Base64.swift */; };
-		D29B659A1FBAEF0F00BBFBDE /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */; };
-		D29B659B1FBAEF0F00BBFBDE /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FE81CDE99250053BC66 /* Hash.swift */; };
-		D29B659C1FBAEF0F00BBFBDE /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF11CDEA8400053BC66 /* HMAC.swift */; };
-		D29B659D1FBAEF0F00BBFBDE /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF71CDF22570053BC66 /* Data+Extensions.swift */; };
-		D29B659E1FBAEF0F00BBFBDE /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */; };
-		D29B65AA1FBB47D100BBFBDE /* Arcane.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29B657C1FBAEEC400BBFBDE /* Arcane.framework */; };
-		D29B65B11FBB480F00BBFBDE /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2322A331D4957C300B5E1D1 /* Tests.swift */; };
-		D2A4E2731D48D7D2002016C5 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */; };
-		D2A4E2741D48D7D6002016C5 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */; };
-		D2A4E2761D48DE35002016C5 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2751D48DE35002016C5 /* AES.swift */; };
-		D2A4E2771D48DE35002016C5 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4E2751D48DE35002016C5 /* AES.swift */; };
-		D2F18FE91CDE99250053BC66 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FE81CDE99250053BC66 /* Hash.swift */; };
-		D2F18FEA1CDE99250053BC66 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FE81CDE99250053BC66 /* Hash.swift */; };
-		D2F18FEF1CDEA2E70053BC66 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */; };
-		D2F18FF01CDEA2E70053BC66 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */; };
-		D2F18FF21CDEA8400053BC66 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF11CDEA8400053BC66 /* HMAC.swift */; };
-		D2F18FF31CDEA8400053BC66 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF11CDEA8400053BC66 /* HMAC.swift */; };
-		D2F18FF81CDF22570053BC66 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF71CDF22570053BC66 /* Data+Extensions.swift */; };
-		D2F18FF91CDF22570053BC66 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F18FF71CDF22570053BC66 /* Data+Extensions.swift */; };
-		D5B2E8AA1C3A780C00C0327D /* Arcane.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Arcane.framework */; };
-		D5C6294A1C3A7FAA007F7B7C /* Arcane.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Arcane.framework */; };
+		D2BF2AE825BE284B008AA1FF /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF2AE125BE2848008AA1FF /* HMAC.swift */; };
+		D2BF2AE925BE284B008AA1FF /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF2AE225BE2849008AA1FF /* Data+Extensions.swift */; };
+		D2BF2AEA25BE284B008AA1FF /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF2AE325BE2849008AA1FF /* Crypto.swift */; };
+		D2BF2AEB25BE284B008AA1FF /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF2AE425BE2849008AA1FF /* Base64.swift */; };
+		D2BF2AED25BE284B008AA1FF /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF2AE625BE284A008AA1FF /* AES.swift */; };
+		D2BF2AEE25BE284B008AA1FF /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF2AE725BE284B008AA1FF /* Hash.swift */; };
+		OBJ_34 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_45 /* ArcaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ArcaneTests.swift */; };
+		OBJ_46 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
+		OBJ_48 /* Arcane.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Arcane::Arcane::Product" /* Arcane.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D29B65AB1FBB47D100BBFBDE /* PBXContainerItemProxy */ = {
+		D2BF2ADB25BE2823008AA1FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D5B2E8961C3A780C00C0327D /* Project object */;
+			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D29B657B1FBAEEC400BBFBDE;
-			remoteInfo = "Arcane-tvOS";
+			remoteGlobalIDString = "Arcane::Arcane";
+			remoteInfo = Arcane;
 		};
-		D5B2E8AB1C3A780C00C0327D /* PBXContainerItemProxy */ = {
+		D2BF2ADE25BE2824008AA1FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D5B2E8961C3A780C00C0327D /* Project object */;
+			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D5B2E89E1C3A780C00C0327D;
-			remoteInfo = CommonCryptoSwift;
-		};
-		D5C6294B1C3A7FAA007F7B7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D5B2E8961C3A780C00C0327D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D5C6293F1C3A7FAA007F7B7C;
-			remoteInfo = "CommonCryptoSwift-Mac";
+			remoteGlobalIDString = "Arcane::ArcaneTests";
+			remoteInfo = ArcaneTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A3D796191D75337300A35114 /* Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
-		D2322A2E1D4957C300B5E1D1 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		D2322A2F1D4957C300B5E1D1 /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
-		D2322A311D4957C300B5E1D1 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		D2322A321D4957C300B5E1D1 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
-		D2322A331D4957C300B5E1D1 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		D29B657C1FBAEEC400BBFBDE /* Arcane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arcane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D29B657F1FBAEEC400BBFBDE /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		D29B65891FBAEED000BBFBDE /* Arcane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arcane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D29B658C1FBAEED000BBFBDE /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
-		D29B65A51FBB47D100BBFBDE /* Arcane-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arcane-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D29B65B01FBB480400BBFBDE /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
-		D2A4E2751D48DE35002016C5 /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
-		D2F18FE81CDE99250053BC66 /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
-		D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
-		D2F18FF11CDEA8400053BC66 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
-		D2F18FF71CDF22570053BC66 /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
-		D5B2E89F1C3A780C00C0327D /* Arcane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arcane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5B2E8A91C3A780C00C0327D /* Arcane-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arcane-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5C629401C3A7FAA007F7B7C /* Arcane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arcane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5C629491C3A7FAA007F7B7C /* Arcane-Mac-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arcane-Mac-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Arcane::Arcane::Product" /* Arcane.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Arcane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Arcane::ArcaneTests::Product" /* ArcaneTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArcaneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2BF2AE125BE2848008AA1FF /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		D2BF2AE225BE2849008AA1FF /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		D2BF2AE325BE2849008AA1FF /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		D2BF2AE425BE2849008AA1FF /* Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
+		D2BF2AE625BE284A008AA1FF /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		D2BF2AE725BE284B008AA1FF /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
+		OBJ_12 /* ArcaneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcaneTests.swift; sourceTree = "<group>"; };
+		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_17 /* DerivedData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DerivedData; sourceTree = SOURCE_ROOT; };
+		OBJ_18 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		OBJ_19 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_20 /* Arcane.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Arcane.podspec; sourceTree = "<group>"; };
+		OBJ_21 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D29B65781FBAEEC400BBFBDE /* Frameworks */ = {
+		OBJ_28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D29B65851FBAEED000BBFBDE /* Frameworks */ = {
+		OBJ_47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D29B65A21FBB47D100BBFBDE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D29B65AA1FBB47D100BBFBDE /* Arcane.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5B2E89B1C3A780C00C0327D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5B2E8A61C3A780C00C0327D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5B2E8AA1C3A780C00C0327D /* Arcane.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5C6293C1C3A7FAA007F7B7C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5C629461C3A7FAA007F7B7C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5C6294A1C3A7FAA007F7B7C /* Arcane.framework in Frameworks */,
+				OBJ_48 /* Arcane.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D2322A2D1D4957C300B5E1D1 /* Arcane */ = {
+		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D2322A2E1D4957C300B5E1D1 /* Info-iOS.plist */,
-				D2322A2F1D4957C300B5E1D1 /* Info-Mac.plist */,
-				D29B657F1FBAEEC400BBFBDE /* Info-tvOS.plist */,
-				D29B658C1FBAEED000BBFBDE /* Info-watchOS.plist */,
+				OBJ_11 /* ArcaneTests */,
 			);
-			path = Arcane;
-			sourceTree = "<group>";
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
 		};
-		D2322A301D4957C300B5E1D1 /* ArcaneTests */ = {
+		OBJ_11 /* ArcaneTests */ = {
 			isa = PBXGroup;
 			children = (
-				D29B65B01FBB480400BBFBDE /* Info-tvOS.plist */,
-				D2322A311D4957C300B5E1D1 /* Info-iOS.plist */,
-				D2322A321D4957C300B5E1D1 /* Info-macOS.plist */,
-				D2322A331D4957C300B5E1D1 /* Tests.swift */,
+				OBJ_12 /* ArcaneTests.swift */,
+				OBJ_13 /* XCTestManifests.swift */,
 			);
 			name = ArcaneTests;
 			path = Tests/ArcaneTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
-		D5B2E8951C3A780C00C0327D = {
+		OBJ_14 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2322A2D1D4957C300B5E1D1 /* Arcane */,
-				D2322A301D4957C300B5E1D1 /* ArcaneTests */,
-				D5C629691C3A809D007F7B7C /* Sources */,
-				D5B2E8A01C3A780C00C0327D /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		D5B2E8A01C3A780C00C0327D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D5B2E89F1C3A780C00C0327D /* Arcane.framework */,
-				D5B2E8A91C3A780C00C0327D /* Arcane-iOS-Tests.xctest */,
-				D5C629401C3A7FAA007F7B7C /* Arcane.framework */,
-				D5C629491C3A7FAA007F7B7C /* Arcane-Mac-Tests.xctest */,
-				D29B657C1FBAEEC400BBFBDE /* Arcane.framework */,
-				D29B65891FBAEED000BBFBDE /* Arcane.framework */,
-				D29B65A51FBB47D100BBFBDE /* Arcane-tvOS-Tests.xctest */,
+				"Arcane::ArcaneTests::Product" /* ArcaneTests.xctest */,
+				"Arcane::Arcane::Product" /* Arcane.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D5C629691C3A809D007F7B7C /* Sources */ = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
-				D2A4E2751D48DE35002016C5 /* AES.swift */,
-				A3D796191D75337300A35114 /* Base64.swift */,
-				D2F18FEE1CDEA2E70053BC66 /* Crypto.swift */,
-				D2F18FE81CDE99250053BC66 /* Hash.swift */,
-				D2F18FF11CDEA8400053BC66 /* HMAC.swift */,
-				D2F18FF71CDF22570053BC66 /* Data+Extensions.swift */,
-				D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */,
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_14 /* Products */,
+				OBJ_17 /* DerivedData */,
+				OBJ_18 /* LICENSE.md */,
+				OBJ_19 /* README.md */,
+				OBJ_20 /* Arcane.podspec */,
+				OBJ_21 /* CONTRIBUTING.md */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Arcane */,
 			);
 			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* Arcane */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF2AE625BE284A008AA1FF /* AES.swift */,
+				D2BF2AE425BE2849008AA1FF /* Base64.swift */,
+				D2BF2AE325BE2849008AA1FF /* Crypto.swift */,
+				D2BF2AE225BE2849008AA1FF /* Data+Extensions.swift */,
+				D2BF2AE725BE284B008AA1FF /* Hash.swift */,
+				D2BF2AE125BE2848008AA1FF /* HMAC.swift */,
+			);
+			name = Arcane;
 			path = Sources/Arcane;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		D29B65791FBAEEC400BBFBDE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D29B65861FBAEED000BBFBDE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5B2E89C1C3A780C00C0327D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5C6293D1C3A7FAA007F7B7C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		D29B657B1FBAEEC400BBFBDE /* Arcane-tvOS */ = {
+		"Arcane::Arcane" /* Arcane */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D29B65831FBAEEC400BBFBDE /* Build configuration list for PBXNativeTarget "Arcane-tvOS" */;
+			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "Arcane" */;
 			buildPhases = (
-				D0519313214FFCBE0047AB2D /* Run Script: CommonCrypto */,
-				D29B65771FBAEEC400BBFBDE /* Sources */,
-				D29B65781FBAEEC400BBFBDE /* Frameworks */,
-				D29B65791FBAEEC400BBFBDE /* Headers */,
-				D29B657A1FBAEEC400BBFBDE /* Resources */,
+				OBJ_26 /* Sources */,
+				OBJ_28 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Arcane-tvOS";
-			productName = "Arcane-tvOS";
-			productReference = D29B657C1FBAEEC400BBFBDE /* Arcane.framework */;
+			name = Arcane;
+			productName = Arcane;
+			productReference = "Arcane::Arcane::Product" /* Arcane.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D29B65881FBAEED000BBFBDE /* Arcane-watchOS */ = {
+		"Arcane::ArcaneTests" /* ArcaneTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D29B658E1FBAEED000BBFBDE /* Build configuration list for PBXNativeTarget "Arcane-watchOS" */;
+			buildConfigurationList = OBJ_41 /* Build configuration list for PBXNativeTarget "ArcaneTests" */;
 			buildPhases = (
-				D0519314214FFCD20047AB2D /* Run Script: CommonCrypto */,
-				D29B65841FBAEED000BBFBDE /* Sources */,
-				D29B65851FBAEED000BBFBDE /* Frameworks */,
-				D29B65861FBAEED000BBFBDE /* Headers */,
-				D29B65871FBAEED000BBFBDE /* Resources */,
+				OBJ_44 /* Sources */,
+				OBJ_47 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				OBJ_49 /* PBXTargetDependency */,
 			);
-			name = "Arcane-watchOS";
-			productName = "Arcane-watchOS";
-			productReference = D29B65891FBAEED000BBFBDE /* Arcane.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D29B65A41FBB47D100BBFBDE /* Arcane-tvOS-Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D29B65AD1FBB47D100BBFBDE /* Build configuration list for PBXNativeTarget "Arcane-tvOS-Tests" */;
-			buildPhases = (
-				D29B65A11FBB47D100BBFBDE /* Sources */,
-				D29B65A21FBB47D100BBFBDE /* Frameworks */,
-				D29B65A31FBB47D100BBFBDE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D29B65AC1FBB47D100BBFBDE /* PBXTargetDependency */,
-			);
-			name = "Arcane-tvOS-Tests";
-			productName = "Arcane-tvOS-Tests";
-			productReference = D29B65A51FBB47D100BBFBDE /* Arcane-tvOS-Tests.xctest */;
+			name = ArcaneTests;
+			productName = ArcaneTests;
+			productReference = "Arcane::ArcaneTests::Product" /* ArcaneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D5B2E89E1C3A780C00C0327D /* Arcane-iOS */ = {
+		"Arcane::SwiftPMPackageDescription" /* ArcanePackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5B2E8B31C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Arcane-iOS" */;
+			buildConfigurationList = OBJ_30 /* Build configuration list for PBXNativeTarget "ArcanePackageDescription" */;
 			buildPhases = (
-				D0519311214FFC8E0047AB2D /* Run Script: CommonCrypto */,
-				D5B2E89A1C3A780C00C0327D /* Sources */,
-				D5B2E89B1C3A780C00C0327D /* Frameworks */,
-				D5B2E89C1C3A780C00C0327D /* Headers */,
-				D5B2E89D1C3A780C00C0327D /* Resources */,
+				OBJ_33 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Arcane-iOS";
-			productName = CommonCryptoSwift;
-			productReference = D5B2E89F1C3A780C00C0327D /* Arcane.framework */;
+			name = ArcanePackageDescription;
+			productName = ArcanePackageDescription;
 			productType = "com.apple.product-type.framework";
-		};
-		D5B2E8A81C3A780C00C0327D /* Arcane-iOS-Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D5B2E8B61C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Arcane-iOS-Tests" */;
-			buildPhases = (
-				D5B2E8A51C3A780C00C0327D /* Sources */,
-				D5B2E8A61C3A780C00C0327D /* Frameworks */,
-				D5B2E8A71C3A780C00C0327D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D5B2E8AC1C3A780C00C0327D /* PBXTargetDependency */,
-			);
-			name = "Arcane-iOS-Tests";
-			productName = CommonCryptoSwiftTests;
-			productReference = D5B2E8A91C3A780C00C0327D /* Arcane-iOS-Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D5C6293F1C3A7FAA007F7B7C /* Arcane-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-macOS" */;
-			buildPhases = (
-				D0519312214FFCAB0047AB2D /* Run Script: CommonCrypto */,
-				D5C6293B1C3A7FAA007F7B7C /* Sources */,
-				D5C6293C1C3A7FAA007F7B7C /* Frameworks */,
-				D5C6293D1C3A7FAA007F7B7C /* Headers */,
-				D5C6293E1C3A7FAA007F7B7C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Arcane-macOS";
-			productName = "CommonCryptoSwift-Mac";
-			productReference = D5C629401C3A7FAA007F7B7C /* Arcane.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D5C629481C3A7FAA007F7B7C /* Arcane-macOS-Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-macOS-Tests" */;
-			buildPhases = (
-				D5C629451C3A7FAA007F7B7C /* Sources */,
-				D5C629461C3A7FAA007F7B7C /* Frameworks */,
-				D5C629471C3A7FAA007F7B7C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D5C6294C1C3A7FAA007F7B7C /* PBXTargetDependency */,
-			);
-			name = "Arcane-macOS-Tests";
-			productName = "CommonCryptoSwift-MacTests";
-			productReference = D5C629491C3A7FAA007F7B7C /* Arcane-Mac-Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D5B2E8961C3A780C00C0327D /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = Fantageek;
-				TargetAttributes = {
-					D29B657B1FBAEEC400BBFBDE = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-					D29B65881FBAEED000BBFBDE = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-					D29B65A41FBB47D100BBFBDE = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-					D5B2E89E1C3A780C00C0327D = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0900;
-					};
-					D5B2E8A81C3A780C00C0327D = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0900;
-					};
-					D5C6293F1C3A7FAA007F7B7C = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 1020;
-					};
-					D5C629481C3A7FAA007F7B7C = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 1020;
-					};
-				};
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = D5B2E8991C3A780C00C0327D /* Build configuration list for PBXProject "Arcane" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Arcane" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = D5B2E8951C3A780C00C0327D;
-			productRefGroup = D5B2E8A01C3A780C00C0327D /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5B2E89E1C3A780C00C0327D /* Arcane-iOS */,
-				D5C6293F1C3A7FAA007F7B7C /* Arcane-macOS */,
-				D29B657B1FBAEEC400BBFBDE /* Arcane-tvOS */,
-				D29B65881FBAEED000BBFBDE /* Arcane-watchOS */,
-				D5B2E8A81C3A780C00C0327D /* Arcane-iOS-Tests */,
-				D5C629481C3A7FAA007F7B7C /* Arcane-macOS-Tests */,
-				D29B65A41FBB47D100BBFBDE /* Arcane-tvOS-Tests */,
+				"Arcane::Arcane" /* Arcane */,
+				"Arcane::SwiftPMPackageDescription" /* ArcanePackageDescription */,
+				"Arcane::ArcanePackageTests::ProductTarget" /* ArcanePackageTests */,
+				"Arcane::ArcaneTests" /* ArcaneTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		D29B657A1FBAEEC400BBFBDE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D29B65871FBAEED000BBFBDE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D29B65A31FBB47D100BBFBDE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5B2E89D1C3A780C00C0327D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2322A351D4957C300B5E1D1 /* Info-Mac.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5B2E8A71C3A780C00C0327D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5C6293E1C3A7FAA007F7B7C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5C629471C3A7FAA007F7B7C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D0519311214FFC8E0047AB2D /* Run Script: CommonCrypto */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script: CommonCrypto";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "COMMON_CRYPTO_DIR=\"${SDKROOT}/usr/include/CommonCrypto\"\nif [ -f \"${COMMON_CRYPTO_DIR}/module.modulemap\" ]\nthen\necho \"CommonCrypto already exists, skipping\"\nelse\n# This if-statement means we will only run the main script if the\n# CommonCrypto.framework directory does not exist because otherwise\n# the rest of the script causes a full recompile for anything\n# where CommonCrypto is a dependency\n# Do a \"Clean Build Folder\" to remove this directory and trigger\n# the rest of the script to run\nFRAMEWORK_DIR=\"${BUILT_PRODUCTS_DIR}/CommonCrypto.framework\"\n\nif [ -d \"${FRAMEWORK_DIR}\" ]; then\necho \"${FRAMEWORK_DIR} already exists, so skipping the rest of the script.\"\nexit 0\nfi\n\nmkdir -p \"${FRAMEWORK_DIR}/Modules\"\necho \"module CommonCrypto [system] {\nheader \\\"${SDKROOT}/usr/include/CommonCrypto/CommonCrypto.h\\\"\nexport *\n}\" >> \"${FRAMEWORK_DIR}/Modules/module.modulemap\"\n\nln -sf \"${SDKROOT}/usr/include/CommonCrypto\" \"${FRAMEWORK_DIR}/Headers\"\nfi\n";
-		};
-		D0519312214FFCAB0047AB2D /* Run Script: CommonCrypto */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script: CommonCrypto";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "COMMON_CRYPTO_DIR=\"${SDKROOT}/usr/include/CommonCrypto\"\nif [ -f \"${COMMON_CRYPTO_DIR}/module.modulemap\" ]\nthen\necho \"CommonCrypto already exists, skipping\"\nelse\n# This if-statement means we will only run the main script if the\n# CommonCrypto.framework directory does not exist because otherwise\n# the rest of the script causes a full recompile for anything\n# where CommonCrypto is a dependency\n# Do a \"Clean Build Folder\" to remove this directory and trigger\n# the rest of the script to run\nFRAMEWORK_DIR=\"${BUILT_PRODUCTS_DIR}/CommonCrypto.framework\"\n\nif [ -d \"${FRAMEWORK_DIR}\" ]; then\necho \"${FRAMEWORK_DIR} already exists, so skipping the rest of the script.\"\nexit 0\nfi\n\nmkdir -p \"${FRAMEWORK_DIR}/Modules\"\necho \"module CommonCrypto [system] {\nheader \\\"${SDKROOT}/usr/include/CommonCrypto/CommonCrypto.h\\\"\nexport *\n}\" >> \"${FRAMEWORK_DIR}/Modules/module.modulemap\"\n\nln -sf \"${SDKROOT}/usr/include/CommonCrypto\" \"${FRAMEWORK_DIR}/Headers\"\nfi\n";
-		};
-		D0519313214FFCBE0047AB2D /* Run Script: CommonCrypto */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script: CommonCrypto";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "COMMON_CRYPTO_DIR=\"${SDKROOT}/usr/include/CommonCrypto\"\nif [ -f \"${COMMON_CRYPTO_DIR}/module.modulemap\" ]\nthen\necho \"CommonCrypto already exists, skipping\"\nelse\n# This if-statement means we will only run the main script if the\n# CommonCrypto.framework directory does not exist because otherwise\n# the rest of the script causes a full recompile for anything\n# where CommonCrypto is a dependency\n# Do a \"Clean Build Folder\" to remove this directory and trigger\n# the rest of the script to run\nFRAMEWORK_DIR=\"${BUILT_PRODUCTS_DIR}/CommonCrypto.framework\"\n\nif [ -d \"${FRAMEWORK_DIR}\" ]; then\necho \"${FRAMEWORK_DIR} already exists, so skipping the rest of the script.\"\nexit 0\nfi\n\nmkdir -p \"${FRAMEWORK_DIR}/Modules\"\necho \"module CommonCrypto [system] {\nheader \\\"${SDKROOT}/usr/include/CommonCrypto/CommonCrypto.h\\\"\nexport *\n}\" >> \"${FRAMEWORK_DIR}/Modules/module.modulemap\"\n\nln -sf \"${SDKROOT}/usr/include/CommonCrypto\" \"${FRAMEWORK_DIR}/Headers\"\nfi\n";
-		};
-		D0519314214FFCD20047AB2D /* Run Script: CommonCrypto */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script: CommonCrypto";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "COMMON_CRYPTO_DIR=\"${SDKROOT}/usr/include/CommonCrypto\"\nif [ -f \"${COMMON_CRYPTO_DIR}/module.modulemap\" ]\nthen\necho \"CommonCrypto already exists, skipping\"\nelse\n# This if-statement means we will only run the main script if the\n# CommonCrypto.framework directory does not exist because otherwise\n# the rest of the script causes a full recompile for anything\n# where CommonCrypto is a dependency\n# Do a \"Clean Build Folder\" to remove this directory and trigger\n# the rest of the script to run\nFRAMEWORK_DIR=\"${BUILT_PRODUCTS_DIR}/CommonCrypto.framework\"\n\nif [ -d \"${FRAMEWORK_DIR}\" ]; then\necho \"${FRAMEWORK_DIR} already exists, so skipping the rest of the script.\"\nexit 0\nfi\n\nmkdir -p \"${FRAMEWORK_DIR}/Modules\"\necho \"module CommonCrypto [system] {\nheader \\\"${SDKROOT}/usr/include/CommonCrypto/CommonCrypto.h\\\"\nexport *\n}\" >> \"${FRAMEWORK_DIR}/Modules/module.modulemap\"\n\nln -sf \"${SDKROOT}/usr/include/CommonCrypto\" \"${FRAMEWORK_DIR}/Headers\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		D29B65771FBAEEC400BBFBDE /* Sources */ = {
+		OBJ_26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				D29B659A1FBAEF0F00BBFBDE /* Crypto.swift in Sources */,
-				D29B659C1FBAEF0F00BBFBDE /* HMAC.swift in Sources */,
-				D29B659B1FBAEF0F00BBFBDE /* Hash.swift in Sources */,
-				D29B659D1FBAEF0F00BBFBDE /* Data+Extensions.swift in Sources */,
-				D29B65991FBAEF0F00BBFBDE /* Base64.swift in Sources */,
-				D29B65981FBAEF0F00BBFBDE /* AES.swift in Sources */,
-				D29B659E1FBAEF0F00BBFBDE /* Obfuscator.swift in Sources */,
+				D2BF2AEA25BE284B008AA1FF /* Crypto.swift in Sources */,
+				D2BF2AEE25BE284B008AA1FF /* Hash.swift in Sources */,
+				D2BF2AE925BE284B008AA1FF /* Data+Extensions.swift in Sources */,
+				D2BF2AE825BE284B008AA1FF /* HMAC.swift in Sources */,
+				D2BF2AEB25BE284B008AA1FF /* Base64.swift in Sources */,
+				D2BF2AED25BE284B008AA1FF /* AES.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D29B65841FBAEED000BBFBDE /* Sources */ = {
+		OBJ_33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				D29B65931FBAEF0F00BBFBDE /* Crypto.swift in Sources */,
-				D29B65951FBAEF0F00BBFBDE /* HMAC.swift in Sources */,
-				D29B65941FBAEF0F00BBFBDE /* Hash.swift in Sources */,
-				D29B65961FBAEF0F00BBFBDE /* Data+Extensions.swift in Sources */,
-				D29B65921FBAEF0F00BBFBDE /* Base64.swift in Sources */,
-				D29B65911FBAEF0F00BBFBDE /* AES.swift in Sources */,
-				D29B65971FBAEF0F00BBFBDE /* Obfuscator.swift in Sources */,
+				OBJ_34 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D29B65A11FBB47D100BBFBDE /* Sources */ = {
+		OBJ_44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				D29B65B11FBB480F00BBFBDE /* Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5B2E89A1C3A780C00C0327D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2F18FF81CDF22570053BC66 /* Data+Extensions.swift in Sources */,
-				D2A4E2761D48DE35002016C5 /* AES.swift in Sources */,
-				A3D7961A1D75337300A35114 /* Base64.swift in Sources */,
-				D2F18FE91CDE99250053BC66 /* Hash.swift in Sources */,
-				D2F18FF21CDEA8400053BC66 /* HMAC.swift in Sources */,
-				D2F18FEF1CDEA2E70053BC66 /* Crypto.swift in Sources */,
-				D2A4E2731D48D7D2002016C5 /* Obfuscator.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5B2E8A51C3A780C00C0327D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D200AB4A1D495DFC004C40FC /* Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5C6293B1C3A7FAA007F7B7C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2F18FF91CDF22570053BC66 /* Data+Extensions.swift in Sources */,
-				D2A4E2771D48DE35002016C5 /* AES.swift in Sources */,
-				D25460351F75557000F4C4B3 /* Base64.swift in Sources */,
-				D2F18FEA1CDE99250053BC66 /* Hash.swift in Sources */,
-				D2F18FF31CDEA8400053BC66 /* HMAC.swift in Sources */,
-				D2F18FF01CDEA2E70053BC66 /* Crypto.swift in Sources */,
-				D2A4E2741D48D7D6002016C5 /* Obfuscator.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5C629451C3A7FAA007F7B7C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D200AB4B1D495DFD004C40FC /* Tests.swift in Sources */,
+				OBJ_45 /* ArcaneTests.swift in Sources */,
+				OBJ_46 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D29B65AC1FBB47D100BBFBDE /* PBXTargetDependency */ = {
+		OBJ_39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D29B657B1FBAEEC400BBFBDE /* Arcane-tvOS */;
-			targetProxy = D29B65AB1FBB47D100BBFBDE /* PBXContainerItemProxy */;
+			target = "Arcane::ArcaneTests" /* ArcaneTests */;
+			targetProxy = D2BF2ADE25BE2824008AA1FF /* PBXContainerItemProxy */;
 		};
-		D5B2E8AC1C3A780C00C0327D /* PBXTargetDependency */ = {
+		OBJ_49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D5B2E89E1C3A780C00C0327D /* Arcane-iOS */;
-			targetProxy = D5B2E8AB1C3A780C00C0327D /* PBXContainerItemProxy */;
-		};
-		D5C6294C1C3A7FAA007F7B7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D5C6293F1C3A7FAA007F7B7C /* Arcane-macOS */;
-			targetProxy = D5C6294B1C3A7FAA007F7B7C /* PBXContainerItemProxy */;
+			target = "Arcane::Arcane" /* Arcane */;
+			targetProxy = D2BF2ADB25BE2823008AA1FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		D29B65811FBAEEC400BBFBDE /* Debug */ = {
+		OBJ_24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/Arcane/Info-tvOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-tvOS";
-				PRODUCT_NAME = Arcane;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Debug;
-		};
-		D29B65821FBAEEC400BBFBDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/Arcane/Info-tvOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-tvOS";
-				PRODUCT_NAME = Arcane;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Release;
-		};
-		D29B658F1FBAEED000BBFBDE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/Arcane/Info-watchOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-watchOS";
-				PRODUCT_NAME = Arcane;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		D29B65901FBAEED000BBFBDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/Arcane/Info-watchOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-watchOS";
-				PRODUCT_NAME = Arcane;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
-		};
-		D29B65AE1FBB47D100BBFBDE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/ArcaneTests/Info-tvOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-tvOS-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.1;
-			};
-			name = Debug;
-		};
-		D29B65AF1FBB47D100BBFBDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/ArcaneTests/Info-tvOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-tvOS-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.1;
-			};
-			name = Release;
-		};
-		D5B2E8B11C3A780C00C0327D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Arcane.xcodeproj/Arcane_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Arcane;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Arcane;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Arcane.xcodeproj/Arcane_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Arcane;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Arcane;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
-		D5B2E8B21C3A780C00C0327D /* Release */ = {
+		OBJ_31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Arcane.xcodeproj/ArcaneTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D5B2E8B41C3A780C00C0327D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Arcane/Info-iOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-iOS";
-				PRODUCT_NAME = Arcane;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGET_NAME = ArcaneTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		D5B2E8B51C3A780C00C0327D /* Release */ = {
+		OBJ_43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Arcane/Info-iOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-iOS";
-				PRODUCT_NAME = Arcane;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D5B2E8B71C3A780C00C0327D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/ArcaneTests/Info-iOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.CommonCryptoSwiftTests;
-				PRODUCT_NAME = "Arcane-iOS-Tests";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		D5B2E8B81C3A780C00C0327D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/ArcaneTests/Info-iOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.CommonCryptoSwiftTests;
-				PRODUCT_NAME = "Arcane-iOS-Tests";
-			};
-			name = Release;
-		};
-		D5C629521C3A7FAA007F7B7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Arcane/Info-Mac.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-Mac";
-				PRODUCT_NAME = Arcane;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		D5C629531C3A7FAA007F7B7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Arcane/Info-Mac.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Arcane-Mac";
-				PRODUCT_NAME = Arcane;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D5C629551C3A7FAA007F7B7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/ArcaneTests/Info-macOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.CommonCryptoSwift-MacTests";
-				PRODUCT_NAME = "Arcane-Mac-Tests";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		D5C629561C3A7FAA007F7B7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/ArcaneTests/Info-macOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.CommonCryptoSwift-MacTests";
-				PRODUCT_NAME = "Arcane-Mac-Tests";
-				SDKROOT = macosx;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Arcane.xcodeproj/ArcaneTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ArcaneTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D29B65831FBAEEC400BBFBDE /* Build configuration list for PBXNativeTarget "Arcane-tvOS" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "Arcane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D29B65811FBAEEC400BBFBDE /* Debug */,
-				D29B65821FBAEEC400BBFBDE /* Release */,
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D29B658E1FBAEED000BBFBDE /* Build configuration list for PBXNativeTarget "Arcane-watchOS" */ = {
+		OBJ_23 /* Build configuration list for PBXNativeTarget "Arcane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D29B658F1FBAEED000BBFBDE /* Debug */,
-				D29B65901FBAEED000BBFBDE /* Release */,
+				OBJ_24 /* Debug */,
+				OBJ_25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D29B65AD1FBB47D100BBFBDE /* Build configuration list for PBXNativeTarget "Arcane-tvOS-Tests" */ = {
+		OBJ_30 /* Build configuration list for PBXNativeTarget "ArcanePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D29B65AE1FBB47D100BBFBDE /* Debug */,
-				D29B65AF1FBB47D100BBFBDE /* Release */,
+				OBJ_31 /* Debug */,
+				OBJ_32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5B2E8991C3A780C00C0327D /* Build configuration list for PBXProject "Arcane" */ = {
+		OBJ_36 /* Build configuration list for PBXAggregateTarget "ArcanePackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5B2E8B11C3A780C00C0327D /* Debug */,
-				D5B2E8B21C3A780C00C0327D /* Release */,
+				OBJ_37 /* Debug */,
+				OBJ_38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5B2E8B31C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Arcane-iOS" */ = {
+		OBJ_41 /* Build configuration list for PBXNativeTarget "ArcaneTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5B2E8B41C3A780C00C0327D /* Debug */,
-				D5B2E8B51C3A780C00C0327D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5B2E8B61C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Arcane-iOS-Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5B2E8B71C3A780C00C0327D /* Debug */,
-				D5B2E8B81C3A780C00C0327D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5C629521C3A7FAA007F7B7C /* Debug */,
-				D5C629531C3A7FAA007F7B7C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Arcane-macOS-Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5C629551C3A7FAA007F7B7C /* Debug */,
-				D5C629561C3A7FAA007F7B7C /* Release */,
+				OBJ_42 /* Debug */,
+				OBJ_43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D5B2E8961C3A780C00C0327D /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }
