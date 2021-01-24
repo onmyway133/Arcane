@@ -57,28 +57,23 @@ let _ = AES.encrypt("string", key: "secret")
 let _ = AES.decrypt(data, key: keyData)
 ```
 
-
-### Obfuscator
-
-```swift
-let obfuscator = Obfuscator(value: "").a.b.c.d.e.n1.n2.X.Y.Z // "abcde12XYZ"
-```
-
 ## Installation
 
-**Arcane** is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Arcane is distributed using the Swift Package Manager. To install it into a project, add it as a dependency within your Package.swift manifest:
 
-```ruby
-pod 'Arcane'
+```swift
+let package = Package(
+    ...
+    dependencies: [
+        .package(url: "https://github.com/onmyway133/Arcane.git", from: "3.0.0")
+    ],
+    ...
+)
 ```
 
-**Arcane** is also available through [Carthage](https://github.com/Carthage/Carthage).
-To install just write into your Cartfile:
+Then import Arcane in your project
 
-```ruby
-github "onmyway133/Arcane"
-```
+`import Arcane`
 
 ## Author
 
