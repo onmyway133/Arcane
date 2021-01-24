@@ -8,8 +8,8 @@ final class ArcaneTests: XCTestCase {
 
     func testExample() {}
     
-    let string = "https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg"
-    let key = "google"
+    private let string = "https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg"
+    private let key = "google"
 
     func testHashWithString() {
         XCTAssertEqual(Hash.MD2(string), "e4a410bf8a43197e67a01d717bbf3557")
@@ -69,7 +69,6 @@ final class ArcaneTests: XCTestCase {
     }
 
     func testAESWithData() {
-
         let data = AES.encrypt(string.data(using: String.Encoding.utf8)!, key: key.data(using: String.Encoding.utf8)!)
         let decrypted = AES.decrypt(data!, key: key.data(using: String.Encoding.utf8)!)!
 

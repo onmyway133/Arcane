@@ -9,8 +9,10 @@
 import Foundation
 import CommonCrypto
 
-typealias DigestMethod = (_ data: UnsafeRawPointer,
-                          _ len: CC_LONG, _ md: UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8>
+typealias DigestMethod = (
+    _ data: UnsafeRawPointer,
+    _ len: CC_LONG, _ md: UnsafeMutablePointer<UInt8>
+) -> UnsafeMutablePointer<UInt8>
 
 struct Crypto {
     enum Method {
@@ -40,20 +42,44 @@ struct Crypto {
         }
     }
 
-    static let MD2 = Crypto(length: CC_MD2_DIGEST_LENGTH, methodKind: .MD2,
-                            HMACAlgorithm: nil)
-    static let MD4 = Crypto(length: CC_MD4_DIGEST_LENGTH, methodKind: .MD4,
-                            HMACAlgorithm: nil)
-    static let MD5 = Crypto(length: CC_MD5_DIGEST_LENGTH, methodKind: .MD5,
-                            HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgMD5))
-    static let SHA1 = Crypto(length: CC_SHA1_DIGEST_LENGTH, methodKind: .SHA1,
-                             HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA1))
-    static let SHA224 = Crypto(length: CC_SHA224_DIGEST_LENGTH, methodKind: .SHA224,
-                               HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA224))
-    static let SHA256 = Crypto(length: CC_SHA256_DIGEST_LENGTH, methodKind: .SHA256,
-                               HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA256))
-    static let SHA384 = Crypto(length: CC_SHA384_DIGEST_LENGTH, methodKind: .SHA384,
-                               HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA384))
-    static let SHA512 = Crypto(length: CC_SHA512_DIGEST_LENGTH, methodKind: .SHA512,
-                               HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA512))
+    static let MD2 = Crypto(
+        length: CC_MD2_DIGEST_LENGTH,
+        methodKind: .MD2,
+        HMACAlgorithm: nil
+    )
+    static let MD4 = Crypto(
+        length: CC_MD4_DIGEST_LENGTH,
+        methodKind: .MD4,
+        HMACAlgorithm: nil
+    )
+    static let MD5 = Crypto(
+        length: CC_MD5_DIGEST_LENGTH,
+        methodKind: .MD5,
+        HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgMD5)
+    )
+    static let SHA1 = Crypto(
+        length: CC_SHA1_DIGEST_LENGTH,
+        methodKind: .SHA1,
+        HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA1)
+    )
+    static let SHA224 = Crypto(
+        length: CC_SHA224_DIGEST_LENGTH,
+        methodKind: .SHA224,
+        HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA224)
+    )
+    static let SHA256 = Crypto(
+        length: CC_SHA256_DIGEST_LENGTH,
+        methodKind: .SHA256,
+        HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA256)
+    )
+    static let SHA384 = Crypto(
+        length: CC_SHA384_DIGEST_LENGTH,
+        methodKind: .SHA384,
+        HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA384)
+    )
+    static let SHA512 = Crypto(
+        length: CC_SHA512_DIGEST_LENGTH,
+        methodKind: .SHA512,
+        HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA512)
+    )
 }
