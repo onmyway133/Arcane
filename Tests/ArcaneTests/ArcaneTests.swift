@@ -69,8 +69,14 @@ final class ArcaneTests: XCTestCase {
     }
 
     func testAESWithData() {
-        let data = AES.encrypt(string.data(using: String.Encoding.utf8)!, key: key.data(using: String.Encoding.utf8)!)
-        let decrypted = AES.decrypt(data!, key: key.data(using: String.Encoding.utf8)!)!
+        let data = AES.encrypt(
+            string.data(using: String.Encoding.utf8)!,
+            key: key.data(using: String.Encoding.utf8)!
+        )
+        let decrypted = AES.decrypt(
+            data!,
+            key: key.data(using: String.Encoding.utf8)!
+        )!
 
         XCTAssertEqual(String(data: decrypted, encoding: String.Encoding.utf8), string)
     }
